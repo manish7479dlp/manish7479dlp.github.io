@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/manish7479dlp.github.io/static/css/main.50394bf0.css",
+    "main.js": "/manish7479dlp.github.io/static/js/main.b38a87a8.js",
+    "static/media/Image.jpg": "/manish7479dlp.github.io/static/media/Image.284a43aa3511dc136842.jpg",
+    "index.html": "/manish7479dlp.github.io/index.html",
+    "main.50394bf0.css.map": "/manish7479dlp.github.io/static/css/main.50394bf0.css.map",
+    "main.b38a87a8.js.map": "/manish7479dlp.github.io/static/js/main.b38a87a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50394bf0.css",
+    "static/js/main.b38a87a8.js"
+  ]
+}
