@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    --primaryColor: white;
+    --secondaryColor: rgb(49, 48, 48);
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( 270deg  , #5736cc , rgb(190, 51, 128));
+    /* background-color: var(--secondaryColor); */
+    
+
+}
+
+
+nav {
+    width: 50%;
+    /* height: 55px; */
+    background-color: rgba(132, 161, 170, 0.295);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    border-radius: 30px;
+    top: 0px;
+    backdrop-filter: blur(40px);
+    box-shadow: 2px 5px 15px rgb(163, 216, 113);
+    background: linear-gradient(to right , rgba(86, 250, 242, 0.5) , rgba(228, 74, 113, 0.438));
+    
+}
+
+.rCircle {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 80px;
+    top: 150px;
+    z-index: -1;
+}
+
+.lCircle {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(0, 0, 255);
+    border-radius: 50%;
+    position: absolute;
+    left: 540px;
+    /* top: 175px; */
+    bottom: 96px;
+    /* transition: all 5s; */
+    margin-left: 0px;
+    animation-name: sample;
+    animation-duration: 26s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* transition: all .5s; */
+}
+
+@keyframes sample {
+    0%{
+         margin-left: 750px;
+    }
+}
+.navLink {
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 30px;
+    padding: 10px 20px;
+    color: var(--primaryColor);
+    font-weight: 600;
+    transition: all , 0.3s;
+    /* margin: 2px; */
+}
+
+.navLink:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(18, 4, 78);
+    border-radius: 30px;
+}
+
+.footerTitle {
+    width: 100%;
+    text-align: center;
+    color: var(--primaryColor);
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 5px;
+}
+
+.mainSection {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin-top: 10%;
+    padding: 40px 10px;
+    
+
+}
+
+.imgSection {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 50%;
+    border-right: 14px solid rgb(203, 247, 103);
+    overflow: hidden;
+   
+}
+
+.imgSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.detailSection {
+    width: 50%;
+    padding: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(rgba(170, 163, 163, 0.158),rgba(235, 225, 225, 0.13));
+    box-shadow: 2px 6px 14px rgb(247, 242, 234);
+
+}
+
+.detailSection .name {
+    text-align: center;
+    padding: 10px;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 4px 2px 10px yellow;
+}
+
+.detailSection p {
+    text-align: center;
+    padding: 5px;
+    font-size: 2.4rem;
+    color: var(--primaryColor);
+    font-family: cursive;
+    
+}
+
+@media screen and (max-width:600px) {
+    body {
+        height: auto;
+    }
+    nav {
+        height: 250px;
+        flex-direction: column;
+        /* background-color: red; */
+
+    }
+
+    .mainSection {
+        padding: 60px 0px;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        
+    }
+
+    html {
+        font-size: 55%;
+    }
+}
+
+
+/* Skills Components Css start */
+
+.heading {
+    text-align: center;
+    color: var(--primaryColor);
+    font-size: 4.5rem;
+    margin: 40px 0px;
+    
+}
+.mainBody {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mainBody .container {
+    width: 1200px;
+    height: 400px;
+    padding: 20px 0;
+    box-shadow: 0px 10px 40px rgba(157, 219, 248, 0.363);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    border-radius: 50px;
+}
+
+.content {
+    display: inline-block;
+    width: 220px;
+    height: 80px;
+    background: linear-gradient(to right , rgba(125, 47, 228, 0.534) , rgba(103, 241, 103, 0.603));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 0 5px 5px purple;
+    transition: .5s;
+    cursor: pointer;
+}
+.content h2 {
+    color: var(--primaryColor);
+    font-size: 2.1rem;
+    font-weight: 900;
+}
+
+.content:hover {
+    background-color: red;
+
+}
+
+
+
+
+
+
+
+
+
+
