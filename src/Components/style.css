@@ -233,10 +233,12 @@ input[type = "checkbox"] {
 
     .detailSection p {
         font-family: 'Bitter', serif;
+        font-family: 'Source Serif 4', sans-serif;
         font-weight: 600;
         /* word-spacing: 2px; */
         text-align: center;
         padding: 8px;
+        
     }
 
     .detailSection .name {
