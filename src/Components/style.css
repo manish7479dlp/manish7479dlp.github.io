@@ -227,6 +227,11 @@ input[type = "checkbox"] {
         
         /* margin: 2px 8px; */
     }
+
+    .detailSection p {
+        text-align: left;
+        padding: 10px;
+    }
 }
 
 
