@@ -17,59 +17,22 @@ body {
 
 }
 
+/* Menu Page Css start */
 
 nav {
     width: 50%;
-    /* height: 55px; */
     background-color: rgba(132, 161, 170, 0.295);
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     margin: auto;
     border-radius: 30px;
-    top: 0px;
     backdrop-filter: blur(40px);
     box-shadow: 2px 5px 15px rgb(163, 216, 113);
     background: linear-gradient(to right , rgba(86, 250, 242, 0.5) , rgba(228, 74, 113, 0.438));
     
 }
 
-.rCircle {
-    height: 200px;
-    width: 200px;
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-    right: 80px;
-    top: 150px;
-    z-index: -1;
-}
-
-.lCircle {
-    height: 150px;
-    width: 150px;
-    background-color: rgb(0, 0, 255);
-    border-radius: 50%;
-    position: absolute;
-    left: 540px;
-    /* top: 175px; */
-    bottom: 96px;
-    /* transition: all 5s; */
-    margin-left: 0px;
-    animation-name: sample;
-    animation-duration: 26s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    /* transition: all .5s; */
-}
-
-@keyframes sample {
-    0%{
-         margin-left: 750px;
-    }
-}
 .navLink {
     font-size: 2.5rem;
     text-decoration: none;
@@ -89,25 +52,117 @@ nav {
     border-radius: 30px;
 }
 
-.footerTitle {
+.label {
     width: 100%;
-    text-align: center;
-    color: var(--primaryColor);
-    position: absolute;
-    bottom: 0px;
-    padding-bottom: 5px;
+    height: 60px;
+    background: goldenrod;
+    display: flex;
+    align-items: center;
+    display: none;
+    position: relative;
+    z-index: 10;
 }
 
-.mainSection {
+.label img {
+    max-width: 45px;
+    max-height: 45px;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 3px;
+    margin-top: 12px;
+    
+}
 
+.label img:hover {
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(128, 0, 0, 0.445);
+}
+
+input[type = "checkbox"] {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .label {
+        display:block;
+    }
+    nav {
+        /* transform: translateY(-400px); */
+        flex-direction: column;
+        margin-top: -265px;
+        width: 100%;
+        height: auto;
+        transition: .8s;
+    }
+
+    .navLink {
+        font-size: 3.2rem;
+        /* padding-left: 10px; */
+        /* padding: 10px 5px; */
+        padding-right: 10px;
+    }
+
+
+    #toggle:checked + nav {
+        /* transform: translatey(0px); */
+        margin-top: 0px;
+    }
+}
+
+
+
+/* Home page css start */
+
+
+
+.rCircle {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    right: 76px;
+    z-index: -1;
+    display: none;
+}
+
+.lCircle {
+    display: none;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(0, 0, 255);
+    border-radius: 50%;
+    position: absolute;
+    left: 540px;
+    z-index: -1;
+    animation-name: sample;
+    animation-duration: 26s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* transition: all .5s; */
+}
+
+@keyframes sample {
+    0%{
+         margin-left: 750px;
+    }
+}
+
+
+
+
+.mainSection {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     /* border: 2px solid red; */
     margin-top: 10%;
     padding: 40px 10px;
+    position: relative;
     
-
 }
 
 .imgSection {
@@ -154,27 +209,23 @@ nav {
     
 }
 
-@media screen and (max-width:600px) {
-    body {
-        height: auto;
-    }
-    nav {
-        height: 250px;
-        flex-direction: column;
-        /* background-color: red; */
-
-    }
-
+@media screen and (max-width: 600px) {
     .mainSection {
-        padding: 60px 0px;
+        height: auto;
         flex-direction: column;
-        /* justify-content: space-between; */
-        align-items: center;
-        
+        margin: 7% 0;
     }
-
-    html {
-        font-size: 55%;
+    .imgSection {
+        height: 250px;
+        width: 250px;
+        margin-bottom: 50px;
+        border-right-color: rgb(85, 192, 211);
+    }
+    .detailSection {
+        width: 100%;
+        height: auto;
+        
+        /* margin: 2px 8px; */
     }
 }
 
@@ -232,6 +283,16 @@ nav {
 
 }
 
+@media screen and (max-width: 600px) {
+    .mainBody .container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .mainBody .container .content {
+        margin: 20px 2px;
+    }
+}
 
 
 
@@ -240,4 +301,13 @@ nav {
 
 
 
-
+.footerTitle {
+    width: 100%;
+    text-align: center;
+    color: var(--primaryColor);
+    position: fixed;
+    bottom:0px;
+    padding: 10px;
+    background-color: rgb(128, 128, 128);
+    z-index: 10;
+}
