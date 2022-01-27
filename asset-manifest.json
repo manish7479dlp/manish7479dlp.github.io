@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/manish7479dlp.github.io/static/css/main.eede051d.css",
+    "main.css": "/manish7479dlp.github.io/static/css/main.f54e77bc.css",
     "main.js": "/manish7479dlp.github.io/static/js/main.cb8728d8.js",
     "static/media/Image.jpg": "/manish7479dlp.github.io/static/media/Image.284a43aa3511dc136842.jpg",
     "static/media/toggle.png": "/manish7479dlp.github.io/static/media/toggle.745580e91f9a46765063.png",
     "index.html": "/manish7479dlp.github.io/index.html",
-    "main.eede051d.css.map": "/manish7479dlp.github.io/static/css/main.eede051d.css.map",
+    "main.f54e77bc.css.map": "/manish7479dlp.github.io/static/css/main.f54e77bc.css.map",
     "main.cb8728d8.js.map": "/manish7479dlp.github.io/static/js/main.cb8728d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.eede051d.css",
+    "static/css/main.f54e77bc.css",
     "static/js/main.cb8728d8.js"
   ]
 }
