@@ -57,7 +57,7 @@ nav {
 .label {
     width: 100%;
     height: 60px;
-    background: goldenrod;
+    background: linear-gradient( 270deg  , #5736cc , rgb(190, 51, 128));
     display: flex;
     align-items: center;
     display: none;
@@ -92,7 +92,7 @@ input[type = "checkbox"] {
     nav {
         /* transform: translateY(-400px); */
         flex-direction: column;
-        margin-top: -265px;
+        margin-top: -268px;
         width: 100%;
         height: auto;
         transition: .8s;
