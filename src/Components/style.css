@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,100&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -224,13 +226,21 @@ input[type = "checkbox"] {
     .detailSection {
         width: 100%;
         height: auto;
+        padding: 5px;
         
         /* margin: 2px 8px; */
     }
 
     .detailSection p {
-        text-align: left;
-        padding: 4px;
+        font-family: 'Bitter', serif;
+        font-weight: 600;
+        /* word-spacing: 2px; */
+        text-align: center;
+        padding: 8px;
+    }
+
+    .detailSection .name {
+        font-size: 3rem;
     }
 }
 
@@ -297,6 +307,7 @@ input[type = "checkbox"] {
     .mainBody .container .content {
         width: 260px;
         margin: 20px 2px;
+        padding: 5px 2px;
     }
 }
 
