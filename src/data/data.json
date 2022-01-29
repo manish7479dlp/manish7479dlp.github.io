@@ -1,0 +1,34 @@
+{
+  "skills": [
+    {
+      "name": "C"
+    },
+    {
+      "name": "C++"
+    },
+    {
+      "name": "Java"
+    },
+    {
+      "name": "Data Structure"
+    },
+    {
+      "name": "Javascript"
+    },
+    {
+      "name": "HTML"
+    },
+    {
+      "name": "CSS"
+    },
+    {
+      "name": "Bootstrap"
+    },
+    {
+      "name": "Reactjs"
+    },
+    {
+      "name": "Github"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+.cache
+.github/*
+!.github/workflows/*
+# package.json
+package-lock.json
+build
+# public
+public/*
+!public/index.html
+
+src/index.js
+src/reportWebVitals.js
+src/setupTests.js
+src/service-worker.js
+src/serviceWorkerRegistration.js
+postcss.config.js
