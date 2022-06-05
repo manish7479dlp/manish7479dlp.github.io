@@ -1,0 +1,22 @@
+.imageContainer {
+  display: inline-block;
+  width: 260px;
+  height: 120px;
+  background: linear-gradient(to right, rgb(118,46,138), rgb(233,88,101));
+  transform: skew(145deg);
+  margin-left: 48px;
+  box-shadow: 1px 1px 2px 3px rgb(155, 155, 155);
+  /* margin-top: 5px; */
+  /* border: 2px solid brown; */
+}
+
+.dmImg {
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 126px;
+    top: 13px;
+}

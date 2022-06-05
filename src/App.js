@@ -1,3 +1,4 @@
+import "./App.css"
 import Title from "Components/Title/Title";
 import React from "react";
 import profileImgUrl from "images/profile.webp";
@@ -7,6 +8,7 @@ import experienceImgUrl from "images/experience.webp";
 import languageImgUrl from "images/language.webp";
 import hobbiesImgUrl from "images/hobbies.webp";
 import Name from "Components/Name/Name";
+import Image from "Components/Image/Image";
 
 const contentData = {
   profile: {
@@ -89,7 +91,9 @@ const App = () => {
   const { imgUrl, title, imgStyle, titleContainerStyle } =
     contentData.education;
   return (
-    <>
+    <div className="container">
+
+    <Image/>
       <Name />
       
       <Title
@@ -134,7 +138,7 @@ const App = () => {
         imgStyle={imgStyle}
         titleContainerStyle={titleContainerStyle}
       />
-    </>
+    </div>
   );
 };
 
