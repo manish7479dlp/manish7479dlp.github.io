@@ -1,0 +1,37 @@
+.nameContainer {
+  display: inline-block;
+  width: 340px;
+  height: 90px;
+  background: linear-gradient(to right, rgb(225, 174, 54), rgb(199, 30, 48));
+  transform: skew(145deg);
+  margin-left: 48px;
+  margin-top: 5px;
+  box-shadow: 1px 1px 2px 3px rgb(155, 155, 155);
+}
+
+.name {
+  display: inline-block;
+  position: relative;
+  bottom: 17px;
+  right: 290px;
+  text-align: center;
+  /* z-index: 2; */
+  /* color: white; */
+  /* background-color: red; */
+}
+
+.name h1 {
+    color: white;
+    font-size: 2.3rem;
+    text-shadow: 3px 3px 7px rgb(56, 57, 56);
+}
+
+.name .underline {
+    display: inline-block;
+    width: 180px;
+    border-top: 3px solid white;
+    border-radius: 5px;
+    /* padding: 5px; */
+    /* background-color: white; */
+    /* text-align: center; */
+}
