@@ -1,0 +1,28 @@
+.mainContainer {
+    position: relative;
+    /* top: 0; */
+    /* background-color: #d9d7d7; */
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    margin: auto;
+    background-color: rgb(207, 233, 227);
+}
+.container .heading {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+.heading .headingContent {
+    display: flex;
+    flex-direction: column;
+}
+

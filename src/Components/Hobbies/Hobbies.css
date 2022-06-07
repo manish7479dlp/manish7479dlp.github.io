@@ -1,0 +1,15 @@
+/* .hobbiesContainer {
+
+} */
+
+.hobbiesContainer ul{
+    margin-left: var(--languageContainerMarginLeft);
+    margin-top: 20px;
+    
+    /* text-align: center; */
+}
+.hobbiesContainer ul li {
+    list-style-position: inside;
+    list-style-type:circle;
+    font-size: var(--languageContainerListFrontSize);
+}
