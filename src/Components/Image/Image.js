@@ -6,7 +6,7 @@ const Image = () => {
         <div className="mainContainer">
            <div className="imageContainer"></div>
            <div className="dmImg">
-               <img src = {myProfileUrl} alt = "Profile-image"/>
+               <img src = {myProfileUrl} alt ="Profile"/>
            </div>
         </div>
     )

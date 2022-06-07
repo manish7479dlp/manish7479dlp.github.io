@@ -1,5 +1,5 @@
 import "./App.css";
-import Title from "Components/Title/Title";
+// import Title from "Components/Title/Title";
 import React from "react";
 import profileImgUrl from "images/profile.webp";
 import educationImgUrl from "images/education.webp";
@@ -109,8 +109,8 @@ const contentData = {
 };
 
 const App = () => {
-  const { imgUrl, title, imgStyle, titleContainerStyle } =
-    contentData.education;
+  // const { imgUrl, title, imgStyle, titleContainerStyle } =
+  //   contentData.education;
   return (
     <div className="container">
       <div className="heading">

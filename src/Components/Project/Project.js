@@ -19,7 +19,7 @@ const Project = (props) => {
             in Systematic Manner.
           </p>
           <strong>Url: </strong>
-          <a href="https://manish.is-a.dev/greatuse/" target="_blank">
+          <a href="https://manish.is-a.dev/greatuse/" target="_blank"  rel="noreferrer" >
             https://manish.is-a.dev/greatuse/
           </a>
         </div>
@@ -29,7 +29,7 @@ const Project = (props) => {
             <strong>Mcet-Exam: </strong>It's a Online Exam Taking Website.
           </p>
           <strong>Url: </strong>
-          <a href="https://mcet-exam.up.railway.app" target="_blank">
+          <a href="https://mcet-exam.up.railway.app" target="_blank"  rel="noreferrer" >
             https://mcet-exam.up.railway.app/
           </a>
         </div>
