@@ -1,0 +1,25 @@
+.skillsContainer {
+
+}
+.skillsContainer .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillsContainer .skills p {
+    color: purple;
+    margin: 5px 8px;
+    padding: 5px 16px;
+    border-radius: 10px;
+    /* background-color: gray; */
+    box-shadow: 1px 1px 5px 3px grey;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.skillsContainer .skills p:hover {
+    background-color: rgb(53, 236, 53);
+    color:white;
+}

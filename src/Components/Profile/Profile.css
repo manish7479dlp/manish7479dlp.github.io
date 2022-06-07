@@ -1,0 +1,22 @@
+:root {
+    --profileContainerHeight: 252px;
+}
+
+.profileContainer {
+    width: calc(var(--titleContainerWidth) + 50px);
+    height: var(--profileContainerHeight);
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 1px;
+    /* box-shadow: 1px 1px 4px 4px rgb(184, 230, 248); */
+}
+.profileContent {
+    font-size: 1.2rem;
+    margin-top: 6px;
+    padding: 5px;
+    margin-left: 40px;
+    /* text-shadow: 1px 1px 2px purple; */
+    /* font-weight: 55p; */
+    /* text-align: center; */
+    /* border: 2px solid brown; */
+}

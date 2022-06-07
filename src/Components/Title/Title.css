@@ -1,27 +1,33 @@
+:root {
+  --titleContainerWidth: 400px;
+  --titleContainerHeight : 55px;
+  --titleContainerMarginLeft: 28px;
+  --titleContainerMarginTop: 35px;
+  --iconContainerSize: 65px;
+  --iconContainerLeft:36px;
+  --iconContainerBottom:24px;
+  --titleContentTop: 45px;
+  --titleContentLeft: 115px;
+
+}
 .titleContainer {
   display: inline-block;
-  width: 400px;
-  height: 55px;
+  width: var(--titleContainerWidth);
+  height: var(--titleContainerHeight);
   transform: skew(38deg);
-  margin-left: 28px;
-  margin-top: 35px;
-  /* position: absolute; */
-  /* bottom: 35px; */
-  /* border: 3px solid rgb(184, 183, 183);
-  background: linear-gradient(to right, rgb(243, 248, 7), rgb(220, 72, 155)); */
+  margin-left: var(--titleContainerMarginLeft);
+  margin-top: var(--titleContainerMarginTop);
 }
 
 .iconContainer {
-  width: 65px;
-  height: 65px;
+  width: var(--iconContainerSize);
+  height: var(--iconContainerSize);
   border-radius: 50%;
   position: absolute;
-  left: 36px;
-  bottom: 24px;
+  left: var(--iconContainerLeft);
+  bottom: var(--iconContainerBottom);
   z-index: 1;
   border: 1px solid palevioletred;
-  /* background-color: red; */
-  /* background: linear-gradient(48deg, rgb(220, 72, 155), rgb(243, 248, 7)); */
 }
 
 .iconContainer img {
@@ -33,9 +39,27 @@
   display: inline;
   text-transform: uppercase;
   position: absolute;
-  top: 45px;
-  left: 115px;
+  top: var(--titleContentTop);
+  left: var(--titleContentLeft);
   color: white;
-  /* background-color: red; */
-  /* border: 4px solid black; */
+  text-shadow: 3px 3px 5px rgb(69, 70, 69);
+
+}
+
+/* Responsive code start */
+
+/* laptop */
+
+@media screen and (max-width: 1760px) {
+  :root {
+    --titleContainerWidth: 362px;
+    --titleContainerHeight: 55px;
+    --titleContainerMarginLeft: 22px;
+    --titleContainerMarginTop: 35px;
+    --iconContainerSize: 65px;
+    --iconContainerLeft: 36px;
+    --iconContainerBottom: 24px;
+    --titleContentTop: 44px;
+    --titleContentLeft: 120px;
+  }
 }

@@ -1,0 +1,81 @@
+:root {
+  --cContainerWidth: 480px;
+  --cContainerHeight: 65px;
+  --cTop: 13px;
+  --cLeft: 126px;
+  --cMarginLeft: -19px;
+  --cFrontSize: 1rem;
+  --cContentWidth: 400px;
+  --contactContentMarginLeft: 0px;
+  --cFrontWeight: 550;
+}
+.contactInfoBox {
+  display: inline-block;
+  width: var(--cContainerWidth);
+  height: var(--cContainerHeight);
+  background: linear-gradient(to right, rgb(23, 46, 111), rgb(130, 14, 125));
+  transform: skew(145deg);
+  margin-left: var(--cMarginLeft);
+  box-shadow: 1px 1px 2px 6px rgb(155, 155, 155);
+}
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contactContent {
+  line-height: 42px;
+  margin-left: var(--contactContentMarginLeft);
+}
+
+.contactContent {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  padding: 4px 3px;
+}
+
+.contactContent a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 30px;
+  padding: 9px 13px;
+  font-size: var(--cFrontSize);
+  font-weight: var(--cFrontWeight);
+  text-shadow: 3px 3px 7px rgb(56, 57, 56);
+
+}
+
+.contactContent a:hover {
+  /* background-color: blue; */
+  background-color: green;
+  /* padding: 1px 7px; */
+  border-radius: 10px;
+}
+
+.contactContent img {
+  width: 16px;
+  height: 16px;
+  /* padding-left: 2px; */
+  text-align: center;
+}
+
+/* Responsive code start */
+
+/* laptop */
+
+@media screen and (max-width: 1760px) and (min-width: 1200px) {
+  :root {
+    --cContainerWidth: 895px;
+    --cContainerHeight: 70px;
+    --cTop: 13px;
+    --cLeft: 126px;
+    --cMarginLeft: -13px;
+    --cFrontSize: 1.6rem;
+    --cContentWidth: 400px;
+    --contactContentMarginLeft: 110px;
+    --cFrontWeight: 500;
+  }
+}

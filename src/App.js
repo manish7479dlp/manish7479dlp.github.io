@@ -7,10 +7,14 @@ import skillImgUrl from "images/skill.webp";
 import experienceImgUrl from "images/experience.webp";
 import languageImgUrl from "images/language.webp";
 import hobbiesImgUrl from "images/hobbies.webp";
+import projectImgUrl from "images/project.webp";
 import Name from "Components/Name/Name";
 import Image from "Components/Image/Image";
 import ContactInfo from "Components/ContactInfo/ContactInfo";
 import Heading from "Components/Heading/Heading";
+import Profile from "Components/Profile/Profile";
+import Language from "Components/Language/Language";
+import RightContentCollection from "Components/RightContentCollection/RightContentCollection"
 
 const contentData = {
   profile: {
@@ -87,6 +91,21 @@ const contentData = {
         "linear-gradient(to right, rgb(39,195,177) , rgb(39,143,175))",
     },
   },
+  project: {
+    imgUrl: projectImgUrl,
+    title: "projects",
+    imgStyle: {
+      // background: "linear-gradient(48deg, rgb(39,143,175), rgb(39,195,177))",
+      background: "linear-gradient(48deg, rgb(12,75,123), rgb(149,179,81))",
+
+    },
+    titleContainerStyle: {
+      border: "3px solid rgb(184, 183, 183)",
+      background: "linear-gradient(to right, rgb(58,185,85) , rgb(45,177,231))",
+      // background: "linear-gradient(to right, rgb(39,195,177) , rgb(39,143,175))",
+
+    },
+  },
 };
 
 const App = () => {
@@ -94,54 +113,19 @@ const App = () => {
     contentData.education;
   return (
     <div className="container">
-      <ContactInfo />
+      <div className="heading">
+        <Image />
+        <div className="headingContent">
+          <Heading />
+          <ContactInfo />
+        </div>
+      </div>
+      <Name/>
+      <Profile Data = {contentData}/>
+      <Language Data = {contentData}/>
+       <RightContentCollection Data = {contentData}/>
 
-      <Image />
-      <Name />
-      <Heading/>
-
-      <Title
-        // title={"Profile"}
-        imgUrl={contentData.profile.imgUrl}
-        title={contentData.profile.title}
-        imgStyle={contentData.profile.imgStyle}
-        titleContainerStyle={contentData.profile.titleContainerStyle}
-      />
-      <Title
-        // title={"Profile"}
-        imgUrl={contentData.skills.imgUrl}
-        title={contentData.skills.title}
-        imgStyle={contentData.skills.imgStyle}
-        titleContainerStyle={contentData.skills.titleContainerStyle}
-      />
-      <Title
-        // title={"Profile"}
-        imgUrl={contentData.experience.imgUrl}
-        title={contentData.experience.title}
-        imgStyle={contentData.experience.imgStyle}
-        titleContainerStyle={contentData.experience.titleContainerStyle}
-      />
-      <Title
-        // title={"Profile"}
-        imgUrl={contentData.language.imgUrl}
-        title={contentData.language.title}
-        imgStyle={contentData.language.imgStyle}
-        titleContainerStyle={contentData.language.titleContainerStyle}
-      />
-      <Title
-        // title={"Profile"}
-        imgUrl={contentData.hobbies.imgUrl}
-        title={contentData.hobbies.title}
-        imgStyle={contentData.hobbies.imgStyle}
-        titleContainerStyle={contentData.hobbies.titleContainerStyle}
-      />
-      <Title
-        // title={"Profile"}
-        imgUrl={imgUrl}
-        title={title}
-        imgStyle={imgStyle}
-        titleContainerStyle={titleContainerStyle}
-      />
+      
     </div>
   );
 };

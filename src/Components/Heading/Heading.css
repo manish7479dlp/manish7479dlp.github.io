@@ -1,18 +1,42 @@
+:root {
+  --hContainerWidth: 360px;
+  --hContainerHeight: 52px;
+  --hMarginLeft: 23px;
+  --hTop: 5px;
+  --hLeft: 135px;
+  --hFontSize: 2.3rem;
+}
 .headingContainer {
   display: inline-block;
-  width: 360px;
-  height: 55px;
+  width: var(--hContainerWidth);
+  height: var(--hContainerHeight);
   background: linear-gradient(to right, rgb(244, 202, 63), rgb(217, 68, 157));
   transform: skew(145deg);
-  margin-left: 48px;
-  box-shadow: 1px 1px 2px 3px rgb(155, 155, 155);
+  margin-left: var(--hMarginLeft);
+  box-shadow: 0px 1px 2px 3px rgb(155, 155, 155);
+  /* z-index: 1; */
 }
 .headingName {
   position: absolute;
-  top: 9px;
-  left: 163px;
+  top: var(--hTop);
+  left: var(--hLeft);
   color: white;
-  font-size: 2.3rem;
+  font-size: var(--hFontSize);
   text-shadow: 3px 3px 7px rgb(56, 57, 56);
   /* bottom: 0px; */
+}
+
+/* Responsive code start */
+
+/* laptop */
+
+@media screen and (max-width: 1760px) {
+  :root {
+    --hContainerWidth: 578px;
+    --hContainerHeight: 63px;
+    --hTop: -2px;
+    --hLeft: 217px;
+    --hMarginLeft: 36px;
+    --hFontSize: 3.6rem;
+  }
 }

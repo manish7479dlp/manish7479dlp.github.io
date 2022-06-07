@@ -1,0 +1,9 @@
+.rightContentCollection {
+  height: calc(96vh - var(--iContainerHeight));
+  width: calc(var(--titleContainerWidth) + 472px);
+  border: 1px solid green;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  flex-wrap: wrap;
+}
