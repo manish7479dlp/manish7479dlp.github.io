@@ -4,15 +4,14 @@ import Skills from "Components/Skills/Skills";
 import "./RightContentCollection.css";
 import Hobbies from "Components/Hobbies/Hobbies";
 
-const RightContentCollection = ({Data}) => {
+const RightContentCollection = ({ Data }) => {
   return (
     <div className="mainContainer">
       <div className="center rightContentCollection">
-          <Education Data = {Data}/>
-          <Hobbies Data = {Data}/>
-          <Skills Data = {Data}/>
-          <Project Data = {Data}/>
-          
+        <Education Data={Data} />
+        <Hobbies Data={Data} />
+        <Skills Data={Data} />
+        <Project Data={Data} />
       </div>
     </div>
   );
