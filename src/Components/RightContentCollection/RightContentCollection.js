@@ -1,6 +1,5 @@
 import Education from "Components/Education/Education";
 import Project from "Components/Project/Project";
-import Profile from "Components/Profile/Profile";
 import Skills from "Components/Skills/Skills";
 import "./RightContentCollection.css";
 import Hobbies from "Components/Hobbies/Hobbies";
