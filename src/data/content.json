@@ -1,0 +1,106 @@
+{
+    "main": {
+        "birthday": "14/march/xxxx",
+        "email": "mrinjamul@gmail.com",
+        "location": "Berhampore, West Bengal",
+        "name": "Injamul Mohammad Mollah",
+        "position": "Software Developer",
+        "website": "https://mrinjamul.in"
+    },
+    "experience": [
+        {
+            "place": "Tech Thinker",
+            "position": "Software Developer",
+            "dateStart": "March 2021",
+            "dateEnd": "Today",
+            "projects": [
+                {
+                    "title": "go-cookiecutter",
+                    "description": "It's a blue print of golang backend application",
+                    "technologies": ["Go", "Gin", "postgresql", "Docker"],
+                    "vertical": "Web services"
+                }
+            ]
+        },
+        {
+            "place": "Self",
+            "position": "Software Developer",
+            "dateStart": "Aug 2018",
+            "dateEnd": "Today",
+            "projects": [
+                {
+                    "title": "tasks",
+                    "description": "A command-line todolist application.",
+                    "technologies": ["Go", "cobra", "json"],
+                    "vertical": "CLI application"
+                },
+                {
+                    "title": "gpassmanager",
+                    "description": "Simple Password Manager Application is written in Golang",
+                    "technologies": ["Go", "cobra", "json"],
+                    "vertical": "CLI application"
+                },
+                {
+                    "title": "go-encryptor",
+                    "description": "A simple tool to encrypt and decrypt files",
+                    "technologies": ["Go", "cobra", "aes256"],
+                    "vertical": "CLI application"
+                },
+                {
+                    "title": "simple-web-server",
+                    "description": "A simple web server for web development purpose written in Go",
+                    "technologies": ["Go", "flag", "http"],
+                    "vertical": "CLI application"
+                },
+                {
+                    "title": "go-dupfinder",
+                    "description": "It's a tool to find duplicate files in a directory",
+                    "technologies": ["Go", "cobra", "sha256"],
+                    "vertical": "CLI application"
+                }
+            ]
+        }
+    ],
+    "education": [
+        {
+            "place": "Berhampore, West Bengal, India",
+            "title": "B.Tech in Computer Science and Engineering",
+            "dateStart": "Sept 2021",
+            "dateEnd": "Sept 2024"
+        },
+        {
+            "place": "Dumkal, West Bengal, India",
+            "title": "Diploma in Computer Science and Technology",
+            "dateStart": "Aug 2018",
+            "dateEnd": "July 2021"
+        },
+        {
+            "place": "Lalnagar, West Bengal, India",
+            "title": "Early Education",
+            "dateStart": "Jan 2011",
+            "dateEnd": "July 2018"
+        }
+    ],
+    "courses": [
+        {
+            "place": "Berhampore, West Bengal, India",
+            "title": "Simple is Hard: A talk about UX and UI",
+            "type": "Talk",
+            "year": 2020
+        }
+    ],
+    "certifications": [
+        {
+            "provider": "The Coding School",
+            "title": "Quantum Computing",
+            "year": 2021
+        }
+    ]
+}
+
+
+
+
+
+
+
