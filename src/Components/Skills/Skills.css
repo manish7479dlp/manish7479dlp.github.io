@@ -17,9 +17,11 @@
     box-shadow: 1px 1px 5px 3px grey;
     font-size: 1.2rem;
     font-weight: 550;
+    cursor: pointer;
 }
 
 .skillsContainer .skills p:hover {
     background-color: rgb(53, 236, 53);
     color:white;
+
 }
