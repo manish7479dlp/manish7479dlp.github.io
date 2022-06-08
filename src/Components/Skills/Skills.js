@@ -1,23 +1,13 @@
 import "./Skills.css";
 import Title from "../Title/Title";
+import SkillsData from "data/data.json";
+
 
 const Skills = (props) => {
   const { imgUrl, title, imgStyle, titleContainerStyle } = props.Data.skills;
-  const skills = [
-    "C",
-    "C++",
-    "Java",
-    "DSA",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "Bootstrap",
-    "Reactjs",
-    "Nodejs",
-    "Expressjs",
-    "Mongodb",
-    "Github",
-  ];
+  // const skills = [
+  
+  // ];
   return (
     <div className="skillsContainer educationContainer profileContainer">
       <Title
@@ -27,7 +17,7 @@ const Skills = (props) => {
         titleContainerStyle={titleContainerStyle}
       />
       <div className="skills">
-        {skills.map((elm, idx) => (
+        {SkillsData.skills.map((elm, idx) => (
           <p key={idx}>{elm}</p>
         ))}
       </div>

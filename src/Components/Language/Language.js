@@ -1,5 +1,7 @@
 import "./Language.css";
 import Title from "../Title/Title"
+import LanguageContent from "data/data.json";
+
 
 const Language = (props) => {
    const {imgUrl, title, imgStyle, titleContainerStyle } = props.Data.language
@@ -14,10 +16,13 @@ const Language = (props) => {
         titleContainerStyle={titleContainerStyle}
       />
       <ul>
-          <li>Hindi</li>
-          <li>English</li>
-          <li>Maghhi</li>
-          <li>Bhojpuri</li>
+          {
+            LanguageContent.language.map((elm , idx) => {
+              return (
+                <li key={idx}>{elm.name}</li>
+              )
+            })
+          }
       </ul>
       </div>
     </>

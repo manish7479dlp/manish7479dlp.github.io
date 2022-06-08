@@ -1,35 +1,92 @@
 {
   "skills": [
-    {
-      "name": "C"
-    },
-    {
-      "name": "C++"
-    },
-    {
-      "name": "Java"
-    },
-    {
-      "name": "Data Structure"
-    },
-    {
-      "name": "Javascript"
-    },
-    {
-      "name": "HTML"
-    },
-    {
-      "name": "CSS"
-    },
-    {
-      "name": "Bootstrap"
-    },
-    {
-      "name": "Reactjs"
-    },
-    {
-      "name": "Github"
-    }
-  ]
-}
+    "C",
+    "C++",
+    "Java",
+    "DSA",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "Reactjs",
+    "Nodejs",
+    "Expressjs",
+    "Mongodb",
+    "Github"
+  ],
 
+  "portfolioHolderName": {
+    "name": "Manish Kumar"
+  },
+
+  "profileContent": {
+    "about": "I am Manish Kumar. I am a Computer Science and Engineering 2nd Year Student of Murshidabad College of Engineering and Technology. Intresting Thing about me is that I am very Curious about Learning New Technology."
+  },
+
+  "language": [
+    {
+      "name": "Hindi"
+    },
+    {
+      "name": "English"
+    },
+    {
+      "name": "Maghhi"
+    },
+    {
+      "name": "Bhojpuri"
+    }
+  ],
+
+  "education": {
+    "secondaryEducation": [
+      {
+        "schoolName": "Shiksha Niketan Public School."
+      },
+      {
+        "marks": "308"
+      },
+      {
+        "percentage": "61.6"
+      }
+    ],
+
+    "higherSecondaryEducation": [
+      {
+        "collegeName": "Deo Chand College Hajipur."
+      },
+      {
+        "marks": "370"
+      },
+      {
+        "percentage": "74"
+      }
+    ]
+  },
+
+  "hobbies": [
+    "Travelling",
+    "Listening Music",
+    "Playing Cricket",
+    "Learning about new Technology"
+  ],
+
+  "project": [
+    {
+      "name": "GreatUse",
+      "aboutProject": "It's a Question With Answer Containing Website. In Which Begineer to Advance Level of Question is Present in Systematic Manner.",
+      "url": "https://manish.is-a.dev/greatuse/"
+    },
+    {
+      "name": "Mcet-Exam:",
+      "aboutProject": "It's a Online Exam Taking Website.",
+      "url": "https://mcet-exam.up.railway.app/"
+    }
+  ],
+  "socialMediaLink": {
+    "linkedin": "https://www.linkedin.com/in/manish-kumar-6aa8841a6/",
+    "instagram": "https://www.instagram.com/manish7479dp/",
+    "github": "https://github.com/manish7479dlp",
+    "email": "manish7479dlp@gmail.com" 
+  }
+}

@@ -1,5 +1,6 @@
 import "./Hobbies.css";
 import Title from "Components/Title/Title";
+import HobbiesData from "data/data.json"
 
 const Hobbies = (props) => {
   const { imgUrl, title, imgStyle, titleContainerStyle } = props.Data.hobbies;
@@ -12,10 +13,11 @@ const Hobbies = (props) => {
         titleContainerStyle={titleContainerStyle}
       />
       <ul>
-        <li>Travelling</li>
-        <li>Listening Music</li>
-        <li>Playing Cricket</li>
-        <li>Learning about new Technology</li>
+         {
+           HobbiesData.hobbies.map((elm , idx) => {
+             return <li key={idx}>{elm}</li>
+           })
+         }
       </ul>
     </div>
   );
