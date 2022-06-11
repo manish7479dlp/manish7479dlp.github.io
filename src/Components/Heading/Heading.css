@@ -40,3 +40,87 @@
     --hFontSize: 3.6rem;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --hContainerWidth: 505px;
+    --hContainerHeight: 63px;
+    --hTop: -2px;
+    --hLeft: 187px;
+    --hMarginLeft: 36px;
+    --hFontSize: 3.4rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  :root {
+    --hContainerWidth: 440px;
+    --hContainerHeight: 63px;
+    --hTop: -2px;
+    --hLeft: 150px;
+    --hMarginLeft: 31px;
+    --hFontSize: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  :root {
+    --hContainerWidth: 389px;
+    --hContainerHeight: 63px;
+    --hTop: 1px;
+    --hLeft: 122px;
+    --hFontSize: 3.1rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  :root {
+    --hContainerWidth: 354px;
+    --hLeft: 112px;
+  }
+}
+@media screen and (max-width: 710px) {
+  :root {
+    --hContainerWidth: 311px;
+    --hLeft: 91px;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  :root {
+    --hContainerWidth: 268px;
+    --hContainerHeight: 45px;
+    --hMarginLeft: 23px;
+    --hTop: -4px;
+    --hLeft: 76px;
+    --hFontSize: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  :root {
+    --hContainerWidth: 230px;
+    --hLeft: 59px;
+    --hFontSize: 2.6rem;
+    --hTop: -2px;
+  }
+}
+@media screen and (max-width: 460px) {
+  :root {
+    --hContainerWidth: 201px;
+    --hContainerHeight: 36px;
+    --hLeft: 45px;
+    --hFontSize: 2.3rem;
+    --hMarginLeft: 20px;
+    --hTop: -4px;
+  }
+}
+@media screen and (max-width: 380px) {
+  :root {
+    --hContainerWidth: 150px;
+    --hContainerHeight: 30px;
+    --hLeft: 38px;
+    --hFontSize: 1.8rem;
+    --hMarginLeft: 17px;
+    --hTop: -2px;
+  }
+}

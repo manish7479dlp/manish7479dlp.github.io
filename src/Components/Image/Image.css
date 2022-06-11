@@ -14,7 +14,7 @@
   transform: skew(145deg);
   margin-left: var(--iMarginLeft);
   box-shadow: 1px 1px 2px 6px rgb(155, 155, 155);
-  margin-top: 6px;
+  margin-top: 5px;
   /* border: 2px solid brown; */
 }
 
@@ -30,7 +30,7 @@
   top: var(--iTop);
 }
 
- .dmImg img {
+.dmImg img {
   width: 100%;
   height: 100%;
   /* object-fit: cover; */
@@ -48,5 +48,69 @@
     --iTop: 22px;
     --iLeft: 172px;
     --iMarginLeft: 56px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  :root {
+    --iContainerWidth: 260px;
+    --iContainerHeight: 120px;
+    --iImgContainerSize: 95px;
+    --iTop: 19px;
+    --iLeft: 135px;
+    --iMarginLeft: 53px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  :root {
+    --iContainerWidth: 228px;
+    --iImgContainerSize: 110px;
+    --iTop: 10px;
+    --iLeft: 112px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  :root {
+    --iContainerWidth: 180px;
+    --iContainerHeight: 120px;
+    --iImgContainerSize: 104px;
+    --iTop: 14px;
+    --iLeft: 90px;
+    /* --iMarginLeft: 51px; */
+  }
+}
+
+@media screen and (max-width: 605px) {
+  :root {
+    --iContainerWidth: 149px;
+    --iContainerHeight: 89px;
+    --iImgContainerSize: 80px;
+    --iTop: 10px;
+    --iLeft: 72px;
+    --iMarginLeft: 40px;
+
+  }
+}
+
+@media screen and (max-width: 460px) {
+  :root {
+    --iContainerWidth: 109px;
+    --iContainerHeight: 72px;
+    --iImgContainerSize: 67px;
+    --iTop: 6px;
+    --iLeft: 55px;
+    --iMarginLeft: 34px;
+  }
+}
+@media screen and (max-width: 380px) {
+  :root {
+    --iContainerWidth: 80px;
+    --iContainerHeight: 54px;
+    --iImgContainerSize: 51px;
+    --iTop: 7px;
+    --iLeft: 43px;
+    --iMarginLeft: 29px;
   }
 }

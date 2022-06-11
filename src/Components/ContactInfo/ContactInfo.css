@@ -3,11 +3,13 @@
   --cContainerHeight: 65px;
   --cTop: 13px;
   --cLeft: 126px;
-  --cMarginLeft: -19px;
+  --cMarginLeft: -18px;
+  --cMarginTop: 3px;
   --cFrontSize: 1rem;
   --cContentWidth: 400px;
   --contactContentMarginLeft: 0px;
   --cFrontWeight: 550;
+  --cContentContectBottom: 12px;
 }
 .contactInfoBox {
   display: inline-block;
@@ -16,6 +18,7 @@
   background: linear-gradient(to right, rgb(23, 46, 111), rgb(130, 14, 125));
   transform: skew(145deg);
   margin-left: var(--cMarginLeft);
+  margin-top: var(--cMarginTop);
   box-shadow: 1px 1px 2px 6px rgb(155, 155, 155);
 }
 .center {
@@ -31,7 +34,7 @@
 
 .contactContent {
   position: absolute;
-  bottom: 12px;
+  bottom: var(--cContentContectBottom);
   left: 16px;
   padding: 4px 3px;
 }
@@ -45,7 +48,6 @@
   font-size: var(--cFrontSize);
   font-weight: var(--cFrontWeight);
   text-shadow: 3px 3px 7px rgb(56, 57, 56);
-
 }
 
 .contactContent a:hover {
@@ -66,7 +68,7 @@
 
 /* laptop */
 
-@media screen and (max-width: 1760px) and (min-width: 1305px) {
+@media screen and (max-width: 1760px) {
   :root {
     --cContainerWidth: 895px;
     --cContainerHeight: 70px;
@@ -77,5 +79,235 @@
     --cContentWidth: 400px;
     --contactContentMarginLeft: 110px;
     --cFrontWeight: 500;
+    --cMarginTop: -2px;
+  }
+}
+/* tablet or ipad pro */
+@media screen and (max-width: 1306px) {
+  :root {
+    --cContainerWidth: 95%;
+    --cFrontSize: 1.5rem;
+    --contactContentMarginLeft: 70px;
+    --cContentContectBottom: 8px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --cFrontSize: 1.4rem;
+    --contactContentMarginLeft: 55px;
+    --cContentContectBottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  :root {
+    --contactContentMarginLeft: 45px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  :root {
+    --cFrontSize: 1.3rem;
+    --contactContentMarginLeft: 30px;
+    --cContainerHeight: 61px;
+    --cMarginLeft: -13px;
+    --cContentContectBottom: 6px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  :root {
+    --cFrontSize: 1.2rem;
+    --contactContentMarginLeft: 27px;
+  }
+  .contactContent a {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 920px) {
+  :root {
+    --cFrontSize: 1.2rem;
+    --contactContentMarginLeft: 17px;
+  }
+  .contactContent a {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  :root {
+    --cFrontSize: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  :root {
+    --contactContentMarginLeft: 12px;
+  }
+  .contactContent a {
+    margin-right: 15px;
+    /* color: purple; */
+  }
+}
+
+@media screen and (max-width: 850px) {
+  :root {
+    --contactContentMarginLeft: 2px;
+  }
+
+  .contactContent a {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .contactContent a {
+    /* margin-right: 2px; */
+    padding: 5px 8px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .displayToggle {
+    display: none;
+  }
+  .contactContent img {
+    width: 32px;
+    height: 32px;
+    /* padding-left: 2px; */
+    text-align: center;
+  }
+
+  .contactContent a {
+    padding: 8px 15px;
+    margin-right: 25px;
+    /* margin-bottom: 10px; */
+  }
+
+  :root {
+    --cContentContectBottom: -3px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .contactContent img {
+    width: 25px;
+    height: 25px;
+  }
+  .contactContent a {
+    margin-right: 17px;
+  }
+
+  :root {
+    --cContentContectBottom: 1px;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  :root {
+    --cContainerHeight: 45px;
+    --cMarginLeft: -10px;
+    --cMarginTop: 0px;
+    --contactContentMarginLeft: 10px;
+    --cContentContectBottom: -7px;
+  }
+}
+@media screen and (max-width: 580px) {
+  :root {
+    --cContentContectBottom: -4px;
+  }
+
+  .contactContent img {
+    width: 20px;
+    height: 20px;
+  }
+  .contactContent a {
+    margin-right: 17px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  :root {
+    --contactContentMarginLeft: 5px;
+  }
+}
+@media screen and (max-width: 520px) {
+  :root {
+    --contactContentMarginLeft: 0px;
+  }
+
+  .contactContent a {
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  :root {
+    --contactContentMarginLeft: -12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  :root {
+    --contactContentMarginLeft: -12px;
+  }
+
+  .contactContent a {
+    margin-right: 6px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  :root {
+    --cContainerHeight: 36px;
+    --cMarginLeft: -7px;
+    --cMarginTop: 1px;
+    --contactContentMarginLeft: 1px;
+    --cContentContectBottom: -8px;
+
+  }
+}
+
+@media screen and (max-width: 430px) {
+  :root {
+    --contactContentMarginLeft: -14px;
+    
+  }
+}
+@media screen and (max-width: 415px) {
+  .contactContent img {
+    width: 16px;
+    height: 16px;
+  }
+  .contactContent a {
+    margin-right: 2px;
+  }
+  :root {
+    --cContentContectBottom: -6px;
+
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  :root {
+    --cContainerHeight: 24px;
+    --cMarginLeft: -3px;
+    --cContentContectBottom: -12px;
+}
+}
+
+@media screen and (max-width: 335px) {
+  .contactContent a {
+  padding: 9px 8px;
+  }
+  :root {
+    --contactContentMarginLeft: 5px;
+
+  }
+}
+@media screen and (max-width: 315px) {
+
+  :root {
+    --contactContentMarginLeft: 3px;
+
   }
 }

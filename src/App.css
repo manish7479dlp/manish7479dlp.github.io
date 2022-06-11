@@ -1,3 +1,7 @@
+:root {
+    --ContainerWidth: 1305px;
+}
+
 .mainContainer {
     position: relative;
 }
@@ -5,7 +9,7 @@ a {
     text-decoration: none;
 }
 .container {
-    width: 1305px;
+    width: var(--ContainerWidth);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,7 +24,25 @@ a {
 }
 
 .heading .headingContent {
+    width: var(--ContainerWidth);
     display: flex;
     flex-direction: column;
 }
 
+
+/* // Responsiv code begin */
+
+/* tablet or ipad pro */
+@media screen and (max-width: 1304px) {
+    :root {
+       --ContainerWidth: 100vw;
+    }
+
+    .container {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    
+}
