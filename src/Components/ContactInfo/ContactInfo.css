@@ -48,6 +48,7 @@
   font-size: var(--cFrontSize);
   font-weight: var(--cFrontWeight);
   text-shadow: 3px 3px 7px rgb(56, 57, 56);
+  cursor: pointer;
 }
 
 .contactContent a:hover {
@@ -182,6 +183,11 @@
     padding: 8px 15px;
     margin-right: 25px;
     /* margin-bottom: 10px; */
+  }
+
+  .contactContent a:hover {
+    background-color: transparent;
+
   }
 
   :root {
