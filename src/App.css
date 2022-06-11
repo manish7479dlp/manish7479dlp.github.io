@@ -20,6 +20,7 @@ a {
 
   margin: auto;
   background-color: rgb(207, 233, 227);
+  padding-top: 10px;
 }
 .container .heading {
   display: flex;
