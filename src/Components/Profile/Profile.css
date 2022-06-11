@@ -6,7 +6,6 @@
     width: calc(var(--titleContainerWidth) + 50px);
     height: var(--profileContainerHeight);
     border-radius: 10px;
-    /* border: 1px solid black; */
     margin-left: 1px;
     /* box-shadow: 1px 1px 4px 4px rgb(184, 230, 248); */
 }
@@ -19,4 +18,14 @@
     /* font-weight: 55p; */
     /* text-align: center; */
     /* border: 2px solid brown; */
+}
+
+/* Responsive Code begin */
+
+@media screen and (max-width: 480px) {
+    .profileContainer {
+       height: auto;       
+       padding-bottom: 15px; 
+       /* padding: 10px; */
+    }
 }

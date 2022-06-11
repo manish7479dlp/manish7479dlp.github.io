@@ -8,10 +8,18 @@ const RightContentCollection = ({ Data }) => {
   return (
     <div className="mainContainer">
       <div className="center rightContentCollection">
-        <Education Data={Data} />
-        <Hobbies Data={Data} />
-        <Skills Data={Data} />
-        <Project Data={Data} />
+        <div>
+          <Education Data={Data} />
+        </div>
+        <div>
+          <Hobbies Data={Data} />
+        </div>
+        <div>
+          <Skills Data={Data} />
+        </div>
+        <div>
+          <Project Data={Data} />
+        </div>
       </div>
     </div>
   );

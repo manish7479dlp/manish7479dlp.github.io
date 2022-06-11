@@ -58,3 +58,51 @@
     --nMarginLeft: 36px;
   }
 }
+
+/*  Responsive code begin */
+
+@media screen and (max-width: 480px) {
+  :root {
+    --nContainerWidth: 87%;
+    --nContainerHeight: 64px;
+    --nLeft: 22%;
+    --nbottom: 6px;
+    --nFrontSize: 2.3rem;
+    --nUnderlineWidth: 180px;
+    --nMarginLeft: 27px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :root {
+    --nFrontSize: 2.1rem
+  }
+}
+
+@media screen and (max-width: 385px) {
+  :root {
+    --nContainerWidth: 85%;
+    --nContainerHeight: 64px;
+    --nLeft: 20%;
+    --nbottom: 6px;
+    --nFrontSize: 2.1rem;
+  }
+  .name .underline {
+    display: none;
+  }
+  .name h1 {
+    margin-bottom: 14px;
+  }
+}
+@media screen and (max-width: 335px) {
+  :root {
+    --nContainerWidth: 84%;
+    --nContainerHeight: 56px;
+    --nLeft: 17%;
+    --nbottom: 6px;
+    --nFrontSize: 2rem;
+  }
+  .name h1 {
+    margin-bottom: 10px;
+  }
+}

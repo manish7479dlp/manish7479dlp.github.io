@@ -1,48 +1,50 @@
 :root {
-    --ContainerWidth: 1305px;
+  --ContainerWidth: 1305px;
 }
 
 .mainContainer {
     position: relative;
 }
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 .container {
-    width: var(--ContainerWidth);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid red; */
-    margin: auto;
-    background-color: rgb(207, 233, 227);
+  width: var(--ContainerWidth);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  background-color: rgb(207, 233, 227);
+
+  margin: auto;
+  background-color: rgb(207, 233, 227);
 }
 .container .heading {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
 }
 
 .heading .headingContent {
-    width: var(--ContainerWidth);
-    display: flex;
-    flex-direction: column;
+  width: var(--ContainerWidth);
+  display: flex;
+  flex-direction: column;
 }
-
 
 /* // Responsiv code begin */
 
 /* tablet or ipad pro */
 @media screen and (max-width: 1304px) {
-    :root {
-       --ContainerWidth: 100vw;
-    }
-
-    .container {
-        background-color: red;
-    }
+  :root {
+    --ContainerWidth: 100vw;
+  }
 }
 
-@media screen and (max-width: 1080px) {
-    
+@media screen and (max-width: 480px) {
+   .container {
+    height: auto;
+   }  
+
 }

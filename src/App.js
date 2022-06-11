@@ -14,7 +14,7 @@ import ContactInfo from "Components/ContactInfo/ContactInfo";
 import Heading from "Components/Heading/Heading";
 import Profile from "Components/Profile/Profile";
 import Language from "Components/Language/Language";
-import RightContentCollection from "Components/RightContentCollection/RightContentCollection"
+import RightContentCollection from "Components/RightContentCollection/RightContentCollection";
 
 const contentData = {
   profile: {
@@ -97,13 +97,11 @@ const contentData = {
     imgStyle: {
       // background: "linear-gradient(48deg, rgb(39,143,175), rgb(39,195,177))",
       background: "linear-gradient(48deg, rgb(12,75,123), rgb(149,179,81))",
-
     },
     titleContainerStyle: {
       border: "3px solid rgb(184, 183, 183)",
       background: "linear-gradient(to right, rgb(58,185,85) , rgb(45,177,231))",
       // background: "linear-gradient(to right, rgb(39,195,177) , rgb(39,143,175))",
-
     },
   },
 };
@@ -120,12 +118,10 @@ const App = () => {
           <ContactInfo />
         </div>
       </div>
-      <Name/>
-      <Profile Data = {contentData}/>
-      <Language Data = {contentData}/>
-       <RightContentCollection Data = {contentData}/>
-
-      
+      <Name />
+      <Profile Data={contentData} />
+      <Language Data={contentData} />
+      <RightContentCollection Data={contentData} />
     </div>
   );
 };

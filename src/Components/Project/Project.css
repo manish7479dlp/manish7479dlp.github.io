@@ -36,3 +36,17 @@
 .projectContainer .projectNameContainer strong {
   font-size: 1.3rem;
 }
+
+/* Responsive code begin */
+
+@media screen and (max-width: 480px) {
+  .projectContent {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  .projectContainer .projectNameContainer p,
+.projectNameContainer a {
+  font-size: 1.2rem;
+}
+}

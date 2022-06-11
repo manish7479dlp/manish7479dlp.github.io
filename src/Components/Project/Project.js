@@ -16,7 +16,7 @@ const Project = (props) => {
          {
            ProjectData.project.map((elm , idx) => {
              return (
-              <div key={idx}>
+              <div key={idx} className = "projectContent">
               <p className="aboutProject">
                 <strong>{elm.name}: </strong>{elm.aboutProject}
               </p>
