@@ -95,13 +95,11 @@ const contentData = {
     imgUrl: projectImgUrl,
     title: "projects",
     imgStyle: {
-      // background: "linear-gradient(48deg, rgb(39,143,175), rgb(39,195,177))",
-      background: "linear-gradient(48deg, rgb(12,75,123), rgb(149,179,81))",
+      background: "linear-gradient(48deg, rgb(45,177,231), rgb(58,185,85))",
     },
     titleContainerStyle: {
       border: "3px solid rgb(184, 183, 183)",
       background: "linear-gradient(to right, rgb(58,185,85) , rgb(45,177,231))",
-      // background: "linear-gradient(to right, rgb(39,195,177) , rgb(39,143,175))",
     },
   },
 };
