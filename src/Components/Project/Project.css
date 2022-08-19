@@ -18,6 +18,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding: 1px 19px;
+  overflow-y: auto;
   /* align-items: center; */
   /* border: 1px solid red; */
 }
