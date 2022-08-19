@@ -8,17 +8,14 @@
   font-size: var(--languageContainerListFrontSize);
 }
 
-/* .projectContainer .projectNameContainer {
-  
-} */
+.projectContainer  {
+}
 
 .projectContainer .projectNameContainer {
   height: 65%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: block;
   padding: 1px 19px;
-  overflow: auto;
+  overflow-y: auto;
   margin: 5px 0px;
   /* align-items: center; */
   /* border: 1px solid red; */
@@ -37,6 +34,12 @@
 
 .projectContainer .projectNameContainer strong {
   font-size: 1.3rem;
+}
+
+.projectContent {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  border-radius: 10px;
 }
 
 /* Responsive code begin */
