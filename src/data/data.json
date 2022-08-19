@@ -81,6 +81,11 @@
       "name": "Mcet-Exam:",
       "aboutProject": "It's a Online Exam Taking Website.",
       "url": "https://mcet-exam.up.railway.app/"
+    },
+    {
+      "name": "Mcet-HMS:",
+      "aboutProject": "It's MCET Hostel Management Website.",
+      "url": "https://mcet-hms.herokuapp.com/"
     }
   ],
   "socialMediaLink": {
