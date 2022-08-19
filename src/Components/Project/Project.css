@@ -20,6 +20,8 @@
   padding: 1px 19px;
   overflow-y: auto;
   margin: 5px 0px;
+  position: relative;
+  top: 0px;
   /* align-items: center; */
   /* border: 1px solid red; */
 }
