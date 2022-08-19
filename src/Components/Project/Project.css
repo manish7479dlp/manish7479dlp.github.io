@@ -8,9 +8,9 @@
   font-size: var(--languageContainerListFrontSize);
 }
 
-.projectContainer {
-  height: 100%;
-}
+/* .projectContainer .projectNameContainer {
+  
+} */
 
 .projectContainer .projectNameContainer {
   height: 65%;
@@ -18,7 +18,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding: 1px 19px;
-  overflow-y: auto;
+  overflow: auto;
   margin: 5px 0px;
   /* align-items: center; */
   /* border: 1px solid red; */
