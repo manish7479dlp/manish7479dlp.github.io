@@ -87,6 +87,12 @@
       "aboutProject": "It's MCET Hostel Management Website.",
       "url": "https://mcet-hms.herokuapp.com/"
     }
+    ,
+    {
+      "name": "PERT_CALC:",
+      "aboutProject": "It's a Programme evaluation and review technique Calculator",
+      "url": "https://manish.is-a.dev/PERT_CALC/"
+    }
   ],
   "socialMediaLink": {
     "linkedin": "https://www.linkedin.com/in/manish-kumar-6aa8841a6/",
