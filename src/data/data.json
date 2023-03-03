@@ -3,6 +3,7 @@
     "C",
     "C++",
     "Java",
+    "Python",
     "DSA",
     "JavaScript",
     "HTML",
@@ -78,14 +79,19 @@
       "url": "https://manish.is-a.dev/greatuse/"
     },
     {
-      "name": "Mcet-Exam:",
+      "name": "Mcet-Exam",
       "aboutProject": "It's a Online Exam Taking Website.",
       "url": "https://mcet-exam.up.railway.app/"
     },
     {
-      "name": "Mcet-HMS:",
+      "name": "Mcet-HMS",
       "aboutProject": "It's MCET Hostel Management Website.",
       "url": "https://mcet-hms.herokuapp.com/"
+    },
+    {
+      "name": "Advice-App",
+      "aboutProject": "It's a Random Advice Generator Project.",
+      "url": "https://tourmaline-gecko-dbc259.netlify.app/"
     }
     ,
     {
