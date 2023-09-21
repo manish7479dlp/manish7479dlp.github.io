@@ -21,3 +21,7 @@ body {
   font-size: 5rem;
   text-shadow: 5px 5px 6px rgb(39, 42, 41);
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
