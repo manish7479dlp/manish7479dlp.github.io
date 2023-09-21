@@ -6,7 +6,7 @@ import illustrationUrl from "../assets/hero.svg"
 const Education = () => {
     return (
         <div id='education' className=" pt-3 " style={{ height: "90vh", background: "purple" }}>
-            <h1>Education</h1>
+            <h1 className='h1'>Education</h1>
             <div className='d-flex justify-content-center align-items-center h-75 '>
 
                 <Illustration illustrationUrl={illustrationUrl} />
@@ -21,7 +21,7 @@ const Education = () => {
 
 const EducationContent = () => {
     return (
-        <div data-aos="fade-left" className=' flex-fill  p-4'>
+        <div className=' flex-fill  p-4'>
             <Course />
             <Course />
             <Course />
