@@ -5,7 +5,7 @@ import illustrationUrl from "../assets/hero.svg"
 
 const Education = () => {
     return (
-        <div id='education' className=" pt-3 " style={{ height: "90vh", background: "purple" }}>
+        <div id='education' className=" p-4 " style={{ height: "90vh", background: "purple" }}>
             <h1 className='h1'>Education</h1>
             <div className='d-flex justify-content-center align-items-center h-75 '>
 
