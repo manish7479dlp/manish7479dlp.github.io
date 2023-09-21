@@ -1,5 +1,7 @@
 import React from 'react'
 
+import resumePath from "../assets/resume.pdf"
+
 const Navbar = () => {
     return (
 
@@ -13,9 +15,6 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link " aria-current="page" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
                             <a className="nav-link" href="#education">Education</a>
                         </li>
                         <li className="nav-item">
@@ -26,9 +25,7 @@ const Navbar = () => {
                         </li>
 
                     </ul>
-                    <form className="d-flex" role="search">
-                        <button className="btn btn-outline-success" type="submit">Resume</button>
-                    </form>
+                    <a href={resumePath} download className="btn btn-success">Resume</a>
                 </div>
             </div>
         </nav>
