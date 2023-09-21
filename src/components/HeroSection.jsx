@@ -4,7 +4,7 @@ import illustrationUrl from "../assets/hero.svg"
 
 const HeroSection = () => {
     return (
-        <div className="d-flex justify-content-space-between align-items-center " style={{ height: "80vh" }}>
+        <div className="d-flex justify-content-space-between align-items-center " style={{ height: "95vh" }}>
             <HeroContent />
             <Illustration illustrationUrl={illustrationUrl} />
 
