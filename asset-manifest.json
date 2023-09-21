@@ -1,25 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.63eac868.css",
-    "main.js": "/static/js/main.466d2d90.js",
-    "static/media/MyProfile.jpeg": "/static/media/MyProfile.93ed7012dccd9bc8aa63.jpeg",
-    "static/media/skill.webp": "/static/media/skill.057ea7b11fd8d1e38107.webp",
-    "static/media/language.webp": "/static/media/language.6617480ee29eb3ca7898.webp",
-    "static/media/github.webp": "/static/media/github.6c96077645fe79b5d6ba.webp",
-    "static/media/instagram.webp": "/static/media/instagram.5aac36723fe40c633c16.webp",
-    "static/media/hobbies.webp": "/static/media/hobbies.44bd1a8522c8aa4fd7e2.webp",
-    "static/media/project.webp": "/static/media/project.105e4fdeb4fc85d440ef.webp",
-    "static/media/profile.webp": "/static/media/profile.d105fcbf93a1335e7964.webp",
-    "static/media/linkedin.webp": "/static/media/linkedin.44d869fa92992c74cde7.webp",
-    "static/media/education.webp": "/static/media/education.2d43332b3aafa31c3669.webp",
-    "static/media/experience.webp": "/static/media/experience.bbe2fd80373d1a77706f.webp",
-    "static/media/email.webp": "/static/media/email.b5d439f392ecb7b3e347.webp",
+    "main.css": "/static/css/main.b1339b52.css",
+    "main.js": "/static/js/main.886dd9bf.js",
+    "static/media/hero.svg": "/static/media/hero.142ea852f71ec3bf7dfe9e56ebe04bd2.svg",
+    "static/media/resume.pdf": "/static/media/resume.6101d94d32f51f0b7ef2.pdf",
     "index.html": "/index.html",
-    "main.63eac868.css.map": "/static/css/main.63eac868.css.map",
-    "main.466d2d90.js.map": "/static/js/main.466d2d90.js.map"
+    "main.b1339b52.css.map": "/static/css/main.b1339b52.css.map",
+    "main.886dd9bf.js.map": "/static/js/main.886dd9bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.63eac868.css",
-    "static/js/main.466d2d90.js"
+    "static/css/main.b1339b52.css",
+    "static/js/main.886dd9bf.js"
   ]
 }
