@@ -1,19 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* background-color: aquamarine; */
+:root {
+  --backgroundColor: rgb(73, 73, 73);
+  --textColor: white;
 }
-::-webkit-scrollbar {
-    width: 5px;
-  }
 
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
 
-  ::-webkit-scrollbar-thumb {
-    background: rgb(174, 56, 56);
-    border-radius: 10px;
-  }
+}
