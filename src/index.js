@@ -3,7 +3,18 @@ import ReactDom from 'react-dom';
 import App from './App';
 import "index.css"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init(
+  {
+    offset: 400, // offset (in px) from the original trigger point
+    delay: .5, // values from 0 to 3000, with step 50ms
+    duration: 500,
+  }
+);
+
 ReactDom.render(
-  <App/>,
+  <App />,
   document.getElementById('root')
 );
