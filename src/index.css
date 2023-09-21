@@ -1,5 +1,5 @@
 :root {
-  --backgroundColor: rgb(73, 73, 73);
+  --backgroundColor: rgb(83, 83, 83);
   --textColor: white;
 }
 
@@ -7,7 +7,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--backgroundColor);
-  color: var(--textColor);
 
+
+}
+
+body {
+  background-color: var(--backgroundColor);
+  color: var(--textColor)
+}
+
+.nameShadow {
+  font-weight: bold;
+  font-size: 5rem;
+  text-shadow: 5px 5px 6px rgb(39, 42, 41);
 }

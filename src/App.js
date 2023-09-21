@@ -9,7 +9,7 @@ import Projects from 'components/Projects'
 
 const App = () => {
   return (
-    <div className='container-fluid'>
+    < >
       <Navbar />
       <HeroSection />
       <Education />
@@ -17,7 +17,7 @@ const App = () => {
       <Projects />
       <Skills />
 
-    </div>
+    </>
 
   )
 }
