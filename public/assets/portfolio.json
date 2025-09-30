@@ -8,7 +8,7 @@
         "phone": "+91 7479863918",
         "location": "Kolkata, India",
         "avatar": "/assets/developer-avatar.jpg",
-        "resume": "/assets/resume.pdf"
+        "resume": "/src/assets/resume.pdf"
     },
     "social": {
         "github": "https://github.com/manish7479dlp",
