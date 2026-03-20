@@ -26,6 +26,18 @@
       document.querySelector('link[rel="icon"]').setAttribute("href", data.personal.avatar);
     }
   </script>
+  <!-- GitHub Pages SPA: restore the original path from the ?p= query string -->
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var p = params.get('p');
+      if (p) {
+        var h = params.get('h') || '';
+        window.history.replaceState(null, null, decodeURIComponent(p) + decodeURIComponent(h));
+      }
+    })();
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
