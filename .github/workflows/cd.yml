@@ -3,7 +3,7 @@ name: Build & deploy
 on:
   push:
     branches:
-      - main
+      - new-ui
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20.x
+          node-version: 22.x
       - name: Install NPM packages
         run: npm ci --legacy-peer-deps
       - name: Build project
