@@ -341,7 +341,7 @@ export default function AdminLayout() {
                                 </div>
                                 <div className="admin-form-row" style={{ marginTop: '0.75rem' }}>
                                     <label>Technologies (comma separated)</label>
-                                    <textarea value={cat.technologies.join(', ')} onChange={e => updateData(d => d.skills.categories[i].technologies = e.target.value.split(',').map(t => t.trim()).filter(Boolean))} className="admin-textarea" rows={3} />
+                                    <textarea key={cat.technologies.join(',')} defaultValue={cat.technologies.join(', ')} onBlur={e => updateData(d => d.skills.categories[i].technologies = e.target.value.split(',').map(t => t.trim()).filter(Boolean))} className="admin-textarea" rows={3} />
                                 </div>
                             </div>
                         ))}
