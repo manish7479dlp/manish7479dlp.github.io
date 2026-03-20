@@ -1,0 +1,196 @@
+{
+    "personal": {
+        "name": "Manish",
+        "title": "Java Full Stack Developer",
+        "tagline": "Transforming ideas into scalable digital solutions",
+        "description": "Full Stack Developer with 1.5+ years of professional experience in building scalable, user-friendly, and high-performance web applications. Skilled in Java, Spring Boot, React, Node.js, and modern cloud technologies with expertise in both frontend and backend development.",
+        "email": "manish7479dlp@gmail.com",
+        "phone": "+91 7479863918",
+        "location": "Kolkata, India",
+        "avatar": "/assets/developer-avatar.jpg",
+        "resume": "/src/assets/resume.pdf"
+    },
+    "social": {
+        "github": "https://github.com/manish7479dlp",
+        "linkedin": "https://linkedin.com/in/manish7479dlp",
+        "twitter": "https://twitter.com/manish7479dlp",
+        "website": "https://manishdev.com"
+    },
+    "about": {
+        "title": "About Me",
+        "content": "I'm a passionate Java Full Stack Developer who enjoys solving complex problems with clean, maintainable code. With 1.5+ years of hands-on experience in building enterprise and startup-level applications, I specialize in Java Spring Boot, React, and scalable backend systems.\n\nBeyond coding, I explore new technologies, contribute to open source, and work on side projects to sharpen my skills. My focus is on delivering solutions that blend performance, scalability, and user experience.",
+        "image": "/assets/about-image.jpg",
+        "statsCard": [
+            {
+                "title": "Years Experience",
+                "value": "1.5+"
+            },
+            {
+                "title": "Projects Completed",
+                "value": "15+"
+            },
+            {
+                "title": "Dedication",
+                "value": "100%"
+            }
+        ]
+    },
+    "skills": {
+        "title": "Skills & Technologies",
+        "categories": [
+            {
+                "name": "Frontend",
+                "technologies": [
+                    "React",
+                    "SvelteKit",
+                    "Material UI",
+                    "Shadcn",
+                    "Redux",
+                    "Bootstrap",
+                    "TypeScript",
+                    "Tailwind CSS",
+                    "JavaScript (ES6+)",
+                    "HTML5",
+                    "CSS3"
+                ]
+            },
+            {
+                "name": "Backend",
+                "technologies": [
+                    "Java",
+                    "Spring Boot",
+                    "Microservices",
+                    "Hibernate",
+                    "JDBC",
+                    "Node.js",
+                    "Express.js",
+                    "Python",
+                    "FastAPI",
+                    "PostgreSQL",
+                    "MongoDB",
+                    "Redis",
+                    "Kafka",
+                    "REST APIs"
+                ]
+            },
+            {
+                "name": "Tools & Platforms",
+                "technologies": [
+                    "Git",
+                    "GitHub",
+                    "Shell Scripting",
+                    "Docker",
+                    "AWS",
+                    "VS Code",
+                    "DBeaver",
+                    "Eclipse"
+                ]
+            }
+        ]
+    },
+    "projects": [
+        {
+            "id": 1,
+            "title": "Rescout",
+            "description": "A real estate scouting platform that simplifies property discovery with intelligent search, filtering, and bookmarking features. Built with a focus on scalability and modern UI/UX.",
+            "image": "/assets/project-rescout.jpg",
+            "technologies": [
+                "React",
+                "Spring Boot",
+                "PostgreSQL",
+                "Tailwind CSS",
+                "AWS"
+            ],
+            "github": "https://github.com/manish7479dlp/rescout",
+            "demo": "",
+            "featured": true
+        },
+        {
+            "id": 2,
+            "title": "Crude Oil Tracking System",
+            "description": "Developed during internship — system to track quantity and quality changes in crude oil during transportation. Included multiple user personas, QA approvals, Tableau dashboards, and ACL-based access.",
+            "image": "/assets/project-crudeoil.jpg",
+            "technologies": [
+                "Spring Boot",
+                "PostgreSQL",
+                "React",
+                "Tableau",
+                "AWS"
+            ],
+            "github": "https://github.com/manish7479dlp/crude-oil-tracker",
+            "demo": "",
+            "featured": true
+        },
+        {
+            "id": 3,
+            "title": "GreatUse",
+            "description": "Provide a coding question along with its solution, allowing the user to explore a basic C language implementation, as well as related DSA concepts and a corresponding Java implementation",
+            "image": "/assets/project-greatuse.png",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "Prism",
+                "JavaScript (ES6+)"
+            ],
+            "github": "https://github.com/manish7479dlp/greatuse",
+            "demo": "https://manish.is-a.dev/greatuse/",
+            "featured": false
+        },
+        {
+            "id": 4,
+            "title": "Gallery App",
+            "description": "A full-stack gallery app where users can upload photos, set them public or private, and browse others’ public profiles and photos.",
+            "image": "/assets/project-gallery.png",
+            "technologies": [
+                "React",
+                "Tailwind CSS",
+                "Express.js",
+                "MongoDB",
+                "Cloudinary",
+                "JWT",
+                "Multer"
+            ],
+            "github": "https://github.com/manish7479dlp/photo-gallery",
+            "demo": "https://manish7479dlp-gallery-app.netlify.app/",
+            "featured": false
+        },
+        {
+            "id": 5,
+            "title": "Bloggie",
+            "description": "A blogging platform where users can create, update, delete, and read blogs. Includes authentication and a clean, minimal design.",
+            "image": "/assets/project-bloggie.png",
+            "technologies": [
+                "React",
+                "Bootstrap",
+                "Express.js",
+                "MongoDB",
+                "Cloudinary",
+                "JWT",
+                "Multer"
+            ],
+            "github": "https://github.com/manish7479dlp/blog-api",
+            "demo": "https://manish7479dlp-bloggie.netlify.app/",
+            "featured": false
+        }
+    ],
+    "experience": [
+        {
+            "company": "Aeka Advisors",
+            "position": "Java Full Stack Developer",
+            "duration": "2024 - Present",
+            "description": "Working on full stack applications using Java, Spring Boot, React, and AWS. Responsible for both backend and frontend development, as well as deployment."
+        },
+        {
+            "company": "Internship Project",
+            "position": "Full Stack Developer Intern",
+            "duration": "2023",
+            "description": "Built a crude oil tracking system to monitor changes in quantity and quality during transportation. Designed role-based dashboards and implemented stage-wise data entry."
+        }
+    ],
+    "contact": {
+        "title": "Let's Work Together",
+        "subtitle": "I'm always open to exciting opportunities, collaborations, and challenging projects.",
+        "cta": "Get In Touch"
+    }
+}
