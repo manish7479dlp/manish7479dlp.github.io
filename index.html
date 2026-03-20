@@ -3,28 +3,51 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/profile.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manish Portfolio</title>
-  <meta name="description"
-    content="Passionate full-stack developer with 5+ years of experience creating scalable web applications. Specializing in React, Node.js, and modern web technologies." />
-  <meta name="author" content="Manish" />
-  <meta name="keywords"
-    content="full stack developer, react developer, web developer, portfolio, javascript, typescript, node.js" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="Portfolio, Full Stack Developer, React, Java" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <title>Portfolio</title>
 
-  <meta property="og:title" content="Manish Portfolio" />
-  <meta property="og:description"
-    content="Passionate full-stack developer specializing in React, Node.js, and modern web technologies. View my projects and get in touch." />
-  <meta property="og:type" content="website" />
-  <!-- <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" /> -->
+  <script type="module">
+    import { data } from '/src/data.js';
 
-  <!-- <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@lovable_dev" />
-  <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" /> -->
+    const title = `${data.personal.name} | ${data.personal.title}`;
+    document.title = title;
+
+    document.querySelector('meta[name="description"]').setAttribute("content", data.personal.description || "");
+    document.querySelector('meta[property="og:title"]').setAttribute("content", title);
+    document.querySelector('meta[property="og:description"]').setAttribute("content", data.personal.description || "");
+
+    // Keep avatar as favcion dynamic too!
+    if (data.personal.avatar) {
+      document.querySelector('link[rel="icon"]').setAttribute("href", data.personal.avatar);
+    }
+  </script>
+  <!-- GitHub Pages SPA: restore the original path from the ?p= query string -->
+  <!-- <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var p = params.get('p');
+      if (p) {
+        var h = params.get('h') || '';
+        window.history.replaceState(null, null, decodeURIComponent(p) + decodeURIComponent(h));
+      }
+    })(); -->
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>

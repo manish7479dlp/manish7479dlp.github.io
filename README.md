@@ -1,61 +1,94 @@
+# Manish — Personal Portfolio
 
-# Welcome to My Portfolio
+A modern, responsive developer portfolio built with **React** and **Vite**. Showcases projects, skills, work experience, and contact information — all driven from a single data file.
 
-**Use your preferred IDE**
+🌐 **Live:** [manish.is-a.dev](https://manish.is-a.dev)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Features
 
-Follow these steps:
+- **Animated UI** — smooth transitions and motion effects via Framer Motion
+- **Sections** — Hero, About, Skills, Projects (with filtering), Experience, Contact, Footer
+- **Data-driven** — all content lives in `src/data.js`; no component edits needed for content updates
+- **Admin route** — a separate `/admin` layout accessible via React Router
+- **Responsive** — mobile-first design with custom CSS
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Tech Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+| Layer | Technology |
+|---|---|
+| Framework | React 19 |
+| Build tool | Vite 8 |
+| Routing | React Router DOM 7 |
+| Animation | Framer Motion |
+| Icons | Lucide React |
+| Linting | ESLint 9 |
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+---
+
+## Project Structure
+
+```
+src/
+├── data.js              # All site content (personal info, skills, projects, experience)
+├── App.jsx              # Root component with routing
+├── main.jsx             # Entry point
+├── components/
+│   ├── Navbar           # Top navigation with smooth scroll links
+│   ├── Hero             # Landing section with CTA
+│   ├── About            # Bio, stats card, and code snippet
+│   ├── Skills           # Categorized tech stack
+│   ├── Projects         # Filterable project cards (Featured / All / Private)
+│   ├── Experience       # Work timeline
+│   ├── Contact          # Contact form and social links
+│   └── Footer           # Footer with credits
+└── admin/
+    └── AdminLayout      # Admin panel layout (route: /admin/*)
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Getting Started
 
-**Use GitHub Codespaces**
+**Prerequisites:** Node.js ≥ 18
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+# Install dependencies
+npm install
 
-## What technologies are used for this project?
+# Start development server
+npm run dev
 
-This project is built with:
+# Build for production
+npm run build
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Preview production build
+npm run preview
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/42e8736d-5d92-4b98-aaf1-7562da8e35df) and click on Share -> Publish.
+## Updating Content
 
-## Can I connect a custom domain to my Lovable project?
+All site content is managed in [`src/data.js`](src/data.js). Key sections:
 
-Yes, you can!
+- `personal` — name, title, tagline, contact details
+- `skills.categories` — categorized list of technologies
+- `projects` — project cards with title, description, tech, GitHub/demo links, and `featured` flag
+- `experience` — company, position, duration, description
+- `social` — links to GitHub, LinkedIn, Twitter, Portfolio
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Deployment
 
+The site is deployed to GitHub Pages from the `new-ui` branch. Push changes and the live site at [manish.is-a.dev](https://manish.is-a.dev) updates automatically.
+
+---
+
+## Contact
+
+**Manish** · [manish7479dlp@gmail.com](mailto:manish7479dlp@gmail.com) · [LinkedIn](https://linkedin.com/in/manish7479dlp) · [GitHub](https://github.com/manish7479dlp)

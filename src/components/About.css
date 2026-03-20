@@ -1,0 +1,137 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.about-text-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.about-para {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.8;
+}
+
+.about-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+    padding: 1.25rem;
+    background: var(--gradient-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.highlight-icon {
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+/* Stats cards column */
+.about-cards-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: sticky;
+    top: 6rem;
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem 1.5rem;
+}
+
+.stat-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(96, 165, 250, 0.1);
+    border: 1px solid rgba(96, 165, 250, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.stat-card-value {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+}
+
+.stat-card-label {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-top: 0.2rem;
+}
+
+/* Code snippet */
+.about-code-snippet {
+    padding: 1rem 1.25rem;
+    overflow: hidden;
+}
+
+.code-dots {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 0.75rem;
+}
+
+.code-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.code-dots span:nth-child(1) {
+    background: #ff5f57;
+}
+
+.code-dots span:nth-child(2) {
+    background: #febc2e;
+}
+
+.code-dots span:nth-child(3) {
+    background: #28c840;
+}
+
+.code-block {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    white-space: pre-wrap;
+}
+
+.code-block code {
+    color: var(--color-text);
+}
+
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .about-cards-col {
+        position: static;
+    }
+}
