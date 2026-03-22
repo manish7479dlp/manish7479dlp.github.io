@@ -1,5 +1,5 @@
 import './Skills.css';
-import { data } from '../data';
+import { useData } from '../DataContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
@@ -16,7 +16,7 @@ export default function Skills() {
     const ref = useRef(null);
     const inView = useInView(ref, { once: true, margin: '-100px' });
     const [active, setActive] = useState('All');
-    const { skills, sections: { skills: skillsConfig } } = data;
+    const { skills, sections: { skills: skillsConfig } } = useData();
     const tabs = ['All', ...skills.categories.map((c) => c.name)];
     const filtered = active === 'All' ? skills.categories : skills.categories.filter((c) => c.name === active);
 

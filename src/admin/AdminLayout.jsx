@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { data as initialData } from '../data';
 import './AdminLayout.css';
-import { Settings, Save, Layout, Image as ImageIcon, FileText, Briefcase, Share2, CornerUpLeft, Plus, Trash2, ChevronUp, ChevronDown, Menu, X } from 'lucide-react';
+import { Settings, Save, Layout, Image as ImageIcon, FileText, Briefcase, Share2, CornerUpLeft, Plus, Trash2, ChevronUp, ChevronDown, Menu, X, Eye } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export default function AdminLayout() {
@@ -14,6 +14,11 @@ export default function AdminLayout() {
     const highlightTemp = (id) => {
         setHighlightedId(id);
         setTimeout(() => setHighlightedId(null), 1200);
+    };
+
+    const handlePreview = () => {
+        localStorage.setItem('adminPreviewData', JSON.stringify(formData));
+        window.open(window.location.origin + '/?preview=1', '_blank');
     };
 
     const handleSave = () => {
@@ -418,10 +423,16 @@ export default function AdminLayout() {
                     <button className="admin-hamburger" onClick={() => setSidebarOpen(o => !o)} aria-label="Toggle sidebar">
                         {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
                     </button>
-                    <button className="btn btn-primary" onClick={handleSave}>
-                        <Save size={16} />
-                        Save JSON
-                    </button>
+                    <div style={{ display: 'flex', gap: '0.75rem' }}>
+                        <button className="btn btn-outline" onClick={handlePreview}>
+                            <Eye size={16} />
+                            Preview
+                        </button>
+                        <button className="btn btn-primary" onClick={handleSave}>
+                            <Save size={16} />
+                            Save JSON
+                        </button>
+                    </div>
                 </header>
                 <div className="admin-content-area">
                     <div className="admin-card">
@@ -529,7 +540,19 @@ function ImageCardUploader({ label, value, onChange, aspectRatio = '16/10' }) {
             >
                 {value ? (
                     <>
-                        <img src={value} alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={(e) => { e.target.style.display = 'none'; }} />
+                        <img
+                            src={value}
+                            alt="Preview"
+                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            onError={(e) => {
+                                e.target.style.display = 'none';
+                                e.target.nextSibling && (e.target.nextSibling.style.display = 'flex');
+                            }}
+                        />
+                        <div style={{ display: 'none', position: 'absolute', inset: 0, flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', color: '#8b949e', fontSize: '0.85rem' }}>
+                            <ImageIcon size={32} style={{ opacity: 0.4 }} />
+                            <span>Image not found</span>
+                        </div>
                         <button
                             className="btn btn-primary"
                             style={{ position: 'absolute', bottom: '12px', right: '12px', padding: '0.4rem 0.8rem', fontSize: '0.8rem', opacity: 0.9, backgroundColor: 'rgba(35, 134, 54, 0.85)' }}

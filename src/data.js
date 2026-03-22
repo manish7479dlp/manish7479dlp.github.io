@@ -2,8 +2,8 @@ export const data = {
   "personal": {
     "name": "Manish",
     "title": "Java Full Stack Developer",
-    "tagline": "Building scalable systems & seamless user experiences",
-    "description": "Full Stack Developer with ~2 years of experience designing and building scalable, high-performance web applications. Specialized in Java, Spring Boot, React, and modern cloud ecosystems. I focus on writing clean, maintainable code and delivering production-ready solutions that solve real-world problems.",
+    "tagline": "Turning complex problems into clean, scalable solutions",
+    "description": "Java Full Stack Developer with ~2 years of experience building production-grade web applications. Specialized in Spring Boot microservices, React, and cloud-native architectures — and actively exploring the GenAI space using Google ADK. I write clean, maintainable code and ship solutions that scale.",
     "email": "manish7479dlp@gmail.com",
     "phone": "+91 7479863918",
     "location": "Bengaluru, India",
@@ -53,22 +53,23 @@ export const data = {
   "sections": {
     "hero": {
       "badge": {
-        "text": "Available for opportunities",
+        "text": "Open to new opportunities",
         "show": true
       },
       "greeting": "Hi, I'm",
-      "scrollHint": "Scroll",
+      "scrollHint": "Scroll to explore",
       "cta": {
-        "primary": "Get In Touch",
-        "secondary": "View My Work"
+        "primary": "Let's Connect",
+        "secondary": "See My Work"
       }
     },
     "about": {
       "tag": "About Me",
       "highlights": [
-        "Clean, maintainable code advocate",
-        "Open source contributor & side project enthusiast",
-        "Performance, scalability & UX focused"
+        "Advocate for clean architecture & readable code",
+        "Backend-first thinker with a strong frontend sensibility",
+        "Building GenAI agent workflows with Google ADK",
+        "Always learning — currently exploring system design & DevOps"
       ]
     },
     "skills": {
@@ -115,23 +116,23 @@ export const data = {
     }
   },
   "about": {
-    "title": "About Me",
-    "content": "I'm a results-driven Java Full Stack Developer with a passion for building scalable backend systems and intuitive user interfaces.\n\nWith hands-on experience in both startup and enterprise environments, I’ve worked on real-world systems involving complex data flows, role-based access, and performance-critical applications.\n\nI enjoy solving challenging problems, optimizing systems for scale, and continuously exploring new technologies. Beyond my professional work, I actively build side projects, experiment with modern frameworks, and deepen my understanding of system design.",
+    "title": "A bit about me",
+    "content": "I'm a Java Full Stack Developer who genuinely enjoys the craft of software engineering — from designing clean REST APIs to building responsive UIs that users actually enjoy.\n\nOver the past ~2 years I've worked across startup and enterprise settings, shipping features in high-traffic systems, refactoring legacy monoliths into microservices, and collaborating closely with cross-functional teams to turn requirements into reliable, production-ready code.\n\nI also work on the GenAI side, building intelligent agent workflows using Google ADK — exploring how large language models can be orchestrated to solve real-world problems.\n\nOutside of work you'll find me working on side projects, diving into system design concepts, or tinkering with new tools in the ecosystem. I believe good software is built on clarity, empathy, and relentless iteration.",
     "statsCard": [
       {
-        "title": "Experience",
-        "value": "~2 Years"
+        "title": "Years of Experience",
+        "value": "~2 Yrs"
       },
       {
-        "title": "Projects Built",
+        "title": "Projects Shipped",
         "value": "15+"
       },
       {
-        "title": "Tech Stack",
-        "value": "15+ Tools"
+        "title": "Technologies Used",
+        "value": "20+"
       }
     ],
-    "codeSnippet": "const manish = {\n  role: \"Full Stack Dev\",\n  stack: [\"Java\", \"React\", \"AWS\"],\n  loves: \"clean code\",\n  available: true,\n};"
+    "codeSnippet": "const manish = {\n  role: \"Full Stack Dev\",\n  stack: [\"Java\", \"React\", \"AWS\"],\n  genai: [\"Google ADK\", \"Gemini\"],\n  loves: \"clean code\",\n  available: true,\n};"
   },
   "skills": {
     "title": "Skills & Technologies",
@@ -185,6 +186,17 @@ export const data = {
           "DBeaver",
           "Eclipse"
         ]
+      },
+      {
+        "name": "AI & GenAI",
+        "technologies": [
+          "Google ADK",
+          "Gemini API",
+          "LLMs",
+          "RAG",
+          "Prompt Engineering",
+          "FastAPI (AI APIs)"
+        ]
       }
     ]
   },
@@ -193,7 +205,7 @@ export const data = {
       "id": 1,
       "title": "Rescout",
       "description": "A modern real estate discovery platform with advanced filtering, smart search, and bookmarking features. Designed for scalability with optimized APIs and responsive UI.",
-      "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1772903791/photography/ChatGPT_Image_Feb_28_2026_03_02_13_PM_nu3dgl.png",
+      "image": "",
       "technologies": [
         "React",
         "Spring Boot",
@@ -208,8 +220,8 @@ export const data = {
     {
       "id": 2,
       "title": "BI LLM Project",
-      "description": "An AI-powered business intelligence platform that transforms raw data into actionable insights using LLMs. Features natural language querying, API integration, and dynamic dashboards.",
-      "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1772903579/photography/pexels-pixabay-459225_mtnpi8.jpg",
+      "description": "An AI-powered business intelligence platform that converts raw data into actionable insights using LLMs. Supports natural language querying, integrates multiple data sources (databases, APIs), and enables creation of dynamic, customizable dashboards for real-time, data-driven decision-making..",
+      "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774206781/portfolio/wggeqe9lhpgthqdwohfc.png",
       "technologies": [
         "Python",
         "LangChain",
@@ -223,25 +235,10 @@ export const data = {
       "featured": true
     },
     {
-      "id": 3,
-      "title": "Staff Sales Portal",
-      "description": "An internal e-commerce platform enabling employees to place orders within restricted time windows. Includes OTP-based authentication, product management, and admin controls.",
-      "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1772903748/photography/ChatGPT_Image_Feb_28_2026_01_09_21_PM_wfncyp.png",
-      "technologies": [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "Tailwind CSS"
-      ],
-      "github": "https://github.com/manish7479dlp/staff-sales",
-      "demo": "https://staffsales-demo.vercel.app",
-      "featured": true
-    },
-    {
       "id": 4,
       "title": "Crude Oil Tracking System",
       "description": "Enterprise-grade system developed during internship to monitor crude oil quantity and quality across transportation stages. Includes role-based dashboards, QA workflows, and analytics integration.",
-      "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1772903791/photography/ChatGPT_Image_Feb_28_2026_03_02_13_PM_nu3dgl.png",
+      "image": "",
       "technologies": [
         "Spring Boot",
         "PostgreSQL",
@@ -254,10 +251,25 @@ export const data = {
       "featured": true
     },
     {
+      "id": 3,
+      "title": "Staff Sales Portal",
+      "description": "An internal e-commerce platform enabling employees to place orders within restricted time windows. Includes OTP-based authentication, product management, and admin controls.",
+      "image": "",
+      "technologies": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Tailwind CSS"
+      ],
+      "github": "https://github.com/manish7479dlp/staff-sales",
+      "demo": "https://staffsales-demo.vercel.app",
+      "featured": true
+    },
+    {
       "id": 5,
       "title": "Bloggie",
-      "description": "A full-stack blogging platform with authentication, CRUD operations, and a clean UI for seamless content creation and management.",
-      "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1772903791/photography/ChatGPT_Image_Feb_28_2026_03_02_13_PM_nu3dgl.png",
+      "description": "A modern full-stack blogging platform that enables users to securely create, edit, and manage content with ease. Features authentication, complete CRUD functionality, and a clean, intuitive UI for a seamless writing and reading experience.",
+      "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774206810/portfolio/v2ojnttpmhuyntayin73.png",
       "technologies": [
         "React",
         "Express.js",
@@ -271,8 +283,8 @@ export const data = {
     {
       "id": 6,
       "title": "Gallery App",
-      "description": "A full-stack photo sharing application where users can upload, manage, and share images with public/private visibility and explore other profiles.",
-      "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1772903791/photography/ChatGPT_Image_Feb_28_2026_03_02_13_PM_nu3dgl.png",
+      "description": "A full-stack photo sharing application that allows users to upload, organize, and manage their images with ease. It supports public and private visibility, giving users full control over who can view their content. Users can explore other profiles, view shared images, and interact with a clean, intuitive interface. Built with a focus on performance, scalability, and seamless user experience.",
+      "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774206853/portfolio/ih9njir9hg7f90hu2hel.png",
       "technologies": [
         "React",
         "Express.js",
@@ -288,13 +300,13 @@ export const data = {
     {
       "company": "Internship Project",
       "position": "Full Stack Developer Intern",
-      "duration": "2023",
+      "duration": "Mar 2024 - Aug 2024",
       "description": "Developed a crude oil tracking system to monitor quantity and quality changes during transportation. Implemented role-based dashboards, stage-wise workflows, and data validation mechanisms."
     },
     {
       "company": "Aeka Advisors",
       "position": "Java Full Stack Developer",
-      "duration": "Mar 2024 - Present",
+      "duration": "Aug 2024 - Present",
       "description": "Building and maintaining scalable full-stack applications using Java, Spring Boot, React, and AWS. Responsible for backend architecture, frontend development, API design, and deployment pipelines."
     }
   ],

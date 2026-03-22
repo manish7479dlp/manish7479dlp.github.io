@@ -1,15 +1,16 @@
 import './Projects.css';
-import { data } from '../data';
+import { useData } from '../DataContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { Github, ExternalLink, Star } from 'lucide-react';
+import FallbackImg from './FallbackImg';
 
 export default function Projects() {
     const ref = useRef(null);
     const inView = useInView(ref, { once: true, margin: '-100px' });
     const [filter, setFilter] = useState('All');
-    const { projects, sections: { projects: projectsConfig } } = data;
+    const { projects, sections: { projects: projectsConfig } } = useData();
 
     const filtered = filter === projectsConfig.labels.featured
         ? projects.filter((p) => p.featured)
@@ -54,7 +55,7 @@ export default function Projects() {
                             transition={{ duration: 0.5, delay: 0.1 * i }}
                         >
                             <div className="project-image-wrapper">
-                                <img src={project.image} alt={project.title} className="project-image" />
+                                <FallbackImg src={project.image} alt={project.title} className="project-image" />
                                 <div className="project-image-overlay">
                                     <div className="project-links">
                                         <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link-btn" aria-label="GitHub">
