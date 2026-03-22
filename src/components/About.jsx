@@ -1,5 +1,5 @@
 import './About.css';
-import { data } from '../data';
+import { useData } from '../DataContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
@@ -10,7 +10,7 @@ const icons = [Code2, Lightbulb, Target];
 export default function About() {
     const ref = useRef(null);
     const inView = useInView(ref, { once: true, margin: '-100px' });
-    const { about, sections: { about: aboutConfig } } = data;
+    const { about, sections: { about: aboutConfig } } = useData();
 
     return (
         <section id="about" className="section" ref={ref}>

@@ -1,11 +1,11 @@
 import './Footer.css';
-import { data } from '../data';
+import { useData } from '../DataContext';
 import { Github, Linkedin, Twitter, Globe, Heart } from 'lucide-react';
 
 const socialIcons = { GitHub: Github, LinkedIn: Linkedin, Twitter: Twitter, Website: Globe };
 
 export default function Footer() {
-    const { personal, social, sections: { footer: footerConfig } } = data;
+    const { personal, social, sections: { footer: footerConfig } } = useData();
     const year = new Date().getFullYear();
 
     return (

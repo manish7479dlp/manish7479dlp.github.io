@@ -1,5 +1,5 @@
 import './Contact.css';
-import { data } from '../data';
+import { useData } from '../DataContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
@@ -10,7 +10,7 @@ const socialIcons = { GitHub: Github, LinkedIn: Linkedin, Twitter: Twitter, Webs
 export default function Contact() {
     const ref = useRef(null);
     const inView = useInView(ref, { once: true, margin: '-100px' });
-    const { contact, personal, social, sections: { contact: contactConfig } } = data;
+    const { contact, personal, social, sections: { contact: contactConfig } } = useData();
 
     return (
         <section id="contact" className="section" ref={ref}>

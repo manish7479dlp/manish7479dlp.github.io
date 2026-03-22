@@ -1,5 +1,5 @@
 import './Navbar.css';
-import { data } from '../data';
+import { useData } from '../DataContext';
 import { Github, Linkedin, Twitter, Globe, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
@@ -26,7 +26,7 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const { nav, personal, social } = data;
+    const { nav, personal, social } = useData();
 
     const scrollTo = (id) => {
         document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: 'smooth' });

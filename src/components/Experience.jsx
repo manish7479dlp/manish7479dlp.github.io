@@ -1,5 +1,5 @@
 import './Experience.css';
-import { data } from '../data';
+import { useData } from '../DataContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
@@ -8,7 +8,7 @@ import { Briefcase, Calendar } from 'lucide-react';
 export default function Experience() {
     const ref = useRef(null);
     const inView = useInView(ref, { once: true, margin: '-100px' });
-    const { experience, sections: { experience: expConfig } } = data;
+    const { experience, sections: { experience: expConfig } } = useData();
 
     return (
         <section id="experience" className="section experience-section" ref={ref}>

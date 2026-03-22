@@ -1,7 +1,8 @@
 import './Hero.css';
-import { data } from '../data';
+import { useData } from '../DataContext';
 import { motion } from 'framer-motion';
 import { ArrowDown, Mail, MapPin, Download } from 'lucide-react';
+import FallbackImg from './FallbackImg';
 
 const fadeUp = (delay = 0) => ({
     initial: { opacity: 0, y: 30 },
@@ -10,7 +11,7 @@ const fadeUp = (delay = 0) => ({
 });
 
 export default function Hero() {
-    const { personal, sections: { hero } } = data;
+    const { personal, about, sections: { hero } } = useData();
 
     return (
         <section id="home" className="hero">
@@ -71,7 +72,7 @@ export default function Hero() {
 
                     {/* Stats row inline under buttons */}
                     <motion.div {...fadeUp(0.55)} className="hero-stats">
-                        {data.about.statsCard.map((stat) => (
+                        {about.statsCard.map((stat) => (
                             <div key={stat.title} className="hero-stat">
                                 <span className="hero-stat-value gradient-text">{stat.value}</span>
                                 <span className="hero-stat-label">{stat.title}</span>
@@ -94,7 +95,7 @@ export default function Hero() {
 
                         {/* Photo */}
                         <div className="avatar-img-wrap">
-                            <img
+                            <FallbackImg
                                 src={personal.avatar}
                                 alt={personal.name}
                                 className="hero-avatar-img"
