@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { data as initialData } from '../data';
 import './AdminLayout.css';
-import { Settings, Save, Layout, Image as ImageIcon, FileText, Briefcase, Share2, CornerUpLeft, Plus, Trash2, ChevronUp, ChevronDown } from 'lucide-react';
+import { Settings, Save, Layout, Image as ImageIcon, FileText, Briefcase, Share2, CornerUpLeft, Plus, Trash2, ChevronUp, ChevronDown, Menu, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export default function AdminLayout() {
     const [formData, setFormData] = useState(initialData);
     const [activeTab, setActiveTab] = useState('Hero Section');
     const [highlightedId, setHighlightedId] = useState(null);
+    const [sidebarOpen, setSidebarOpen] = useState(false);
     const navigate = useNavigate();
 
     const highlightTemp = (id) => {
@@ -105,7 +106,7 @@ export default function AdminLayout() {
                     <div className="admin-form-group">
                         <h3 className="admin-form-title">Personal Details & SEO</h3>
 
-                        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(250px, 320px) 1fr', gap: '2rem', marginTop: '1rem' }}>
+                        <div className="admin-grid-image-form" style={{ marginTop: '1rem' }}>
                             {/* Left Side: Avatar */}
                             <div>
                                 <ImageCardUploader label="Profile Avatar (.png/jpg)" value={formData.personal.avatar} onChange={val => updateField('personal.avatar', val)} aspectRatio="1/1" />
@@ -113,7 +114,7 @@ export default function AdminLayout() {
 
                             {/* Right Side: Form Inputs */}
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                                <div className="admin-grid-2col">
                                     <div className="admin-form-row">
                                         <label>Full Name</label>
                                         <input type="text" value={formData.personal.name} onChange={e => updateField('personal.name', e.target.value)} className="admin-input" />
@@ -171,7 +172,7 @@ export default function AdminLayout() {
                                     <button className="btn btn-primary" style={{ padding: '0.3rem', backgroundColor: '#da3633', borderColor: '#da3633' }} onClick={() => updateData(d => d.about.statsCard.splice(i, 1))}><Trash2 size={14} /></button>
                                 </div>
 
-                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem' }}>
+                                <div className="admin-grid-2col" style={{ marginTop: '1rem' }}>
                                     <div className="admin-form-row">
                                         <label>Stat Title (e.g. Experience)</label>
                                         <input type="text" value={stat.title} onChange={e => updateData(d => d.about.statsCard[i].title = e.target.value)} className="admin-input" />
@@ -218,7 +219,7 @@ export default function AdminLayout() {
                                     <strong style={{ fontSize: '1.05rem', color: '#e6edf3' }}>{proj.title || 'New Project'}</strong>
                                 </div>
 
-                                <div style={{ display: 'grid', gridTemplateColumns: 'minmax(250px, 320px) 1fr', gap: '2rem' }}>
+                                <div className="admin-grid-image-form">
                                     {/* Left Side: Large Image Card view */}
                                     <div>
                                         <ImageCardUploader value={proj.image} onChange={val => updateData(d => d.projects[i].image = val)} aspectRatio="16/10" />
@@ -235,7 +236,7 @@ export default function AdminLayout() {
                                             <textarea value={proj.description} onChange={e => updateData(d => d.projects[i].description = e.target.value)} className="admin-textarea" rows={4} />
                                         </div>
 
-                                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                                        <div className="admin-grid-2col">
                                             <div className="admin-form-row">
                                                 <label>GitHub Link</label>
                                                 <input type="text" value={proj.github} onChange={e => updateData(d => d.projects[i].github = e.target.value)} className="admin-input" />
@@ -287,7 +288,7 @@ export default function AdminLayout() {
                                     <strong style={{ fontSize: '1.05rem', color: '#e6edf3' }}>{exp.company || 'New Experience'}</strong>
                                 </div>
 
-                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                                <div className="admin-grid-2col">
                                     <div className="admin-form-row">
                                         <label>Company</label>
                                         <input type="text" value={exp.company} onChange={e => updateData(d => d.experience[i].company = e.target.value)} className="admin-input" />
@@ -382,7 +383,8 @@ export default function AdminLayout() {
 
     return (
         <div className="admin-dashboard">
-            <aside className="admin-sidebar">
+            <div className={`admin-sidebar-overlay ${sidebarOpen ? 'active' : ''}`} onClick={() => setSidebarOpen(false)} />
+            <aside className={`admin-sidebar ${sidebarOpen ? 'open' : ''}`}>
                 <div className="admin-sidebar-header">
                     <h2 className="admin-brand">Data Editor - Dashboard</h2>
                     <span className="admin-subtitle">Content Management System</span>
@@ -395,7 +397,7 @@ export default function AdminLayout() {
                             <button
                                 key={tab.name}
                                 className={`admin-nav-item ${activeTab === tab.name ? 'active' : ''}`}
-                                onClick={() => setActiveTab(tab.name)}
+                                onClick={() => { setActiveTab(tab.name); setSidebarOpen(false); }}
                             >
                                 <Icon size={18} />
                                 {tab.name}
@@ -413,6 +415,9 @@ export default function AdminLayout() {
 
             <main className="admin-main">
                 <header className="admin-topbar">
+                    <button className="admin-hamburger" onClick={() => setSidebarOpen(o => !o)} aria-label="Toggle sidebar">
+                        {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
+                    </button>
                     <button className="btn btn-primary" onClick={handleSave}>
                         <Save size={16} />
                         Save JSON
