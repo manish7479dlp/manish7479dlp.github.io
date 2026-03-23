@@ -72,3 +72,20 @@
 .heart-icon {
     color: #f87171;
 }
+
+@media (max-width: 480px) {
+    .footer-socials {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-tagline {
+        font-size: 0.78rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.72rem;
+        text-align: center;
+        flex-direction: column;
+    }
+}

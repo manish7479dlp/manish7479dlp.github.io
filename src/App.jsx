@@ -7,6 +7,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
+import LeetCode from './components/LeetCode';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AdminLayout from './admin/AdminLayout';
@@ -49,6 +50,7 @@ function Portfolio() {
         <Skills />
         <Projects />
         <Experience />
+        <LeetCode />
         <Contact />
       </main>
       <Footer />

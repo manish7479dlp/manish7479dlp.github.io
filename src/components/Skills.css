@@ -96,8 +96,18 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 600px) {
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .skills-card {
+        padding: 1.25rem;
     }
 }

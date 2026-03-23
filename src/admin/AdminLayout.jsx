@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { data as initialData } from '../data';
 import './AdminLayout.css';
-import { Settings, Save, Layout, Image as ImageIcon, FileText, Briefcase, Share2, CornerUpLeft, Plus, Trash2, ChevronUp, ChevronDown, Menu, X, Eye } from 'lucide-react';
+import { Settings, Save, Layout, Image as ImageIcon, FileText, Briefcase, Share2, CornerUpLeft, Plus, Trash2, ChevronUp, ChevronDown, Menu, X, Eye, Code2 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export default function AdminLayout() {
@@ -42,6 +42,7 @@ export default function AdminLayout() {
         { name: 'Projects Section', icon: ImageIcon },
         { name: 'Experience', icon: Briefcase },
         { name: 'Contact & Social', icon: Share2 },
+        { name: 'LeetCode & DSA', icon: Code2 },
     ];
 
     // Robust nested state updater using JSON clone
@@ -353,6 +354,33 @@ export default function AdminLayout() {
                         ))}
                     </div>
                 );
+            case 'LeetCode & DSA':
+                return (
+                    <div className="admin-form-group">
+                        <h3 className="admin-form-title">Section Config</h3>
+                        <div className="admin-grid-2col">
+                            <div className="admin-form-row">
+                                <label>Section Tag</label>
+                                <input type="text" value={formData.sections.leetcode.tag} onChange={e => updateField('sections.leetcode.tag', e.target.value)} className="admin-input" />
+                            </div>
+                            <div className="admin-form-row">
+                                <label>Section Title</label>
+                                <input type="text" value={formData.sections.leetcode.title} onChange={e => updateField('sections.leetcode.title', e.target.value)} className="admin-input" />
+                            </div>
+                        </div>
+                        <div className="admin-form-row">
+                            <label>Section Subtitle</label>
+                            <input type="text" value={formData.sections.leetcode.subtitle} onChange={e => updateField('sections.leetcode.subtitle', e.target.value)} className="admin-input" />
+                        </div>
+
+                        <br />
+                        <h3 className="admin-form-title">LeetCode Profile</h3>
+                        <div className="admin-form-row">
+                            <label>LeetCode Username</label>
+                            <input type="text" value={formData.leetcode.username} onChange={e => updateField('leetcode.username', e.target.value)} className="admin-input" />
+                        </div>
+                    </div>
+                );
             case 'Contact & Social':
                 return (
                     <div className="admin-form-group">
@@ -459,6 +487,7 @@ function IconForTab({ tabName }) {
         case 'Projects Section': return <ImageIcon size={20} className="admin-card-icon" />;
         case 'Experience': return <Briefcase size={20} className="admin-card-icon" />;
         case 'Contact & Social': return <Share2 size={20} className="admin-card-icon" />;
+        case 'LeetCode & DSA': return <Code2 size={20} className="admin-card-icon" />;
         default: return <Settings size={20} className="admin-card-icon" />;
     }
 }
