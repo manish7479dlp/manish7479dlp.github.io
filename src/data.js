@@ -7,7 +7,7 @@ export const data = {
     "email": "manish7479dlp@gmail.com",
     "phone": "+91 7479863918",
     "location": "Bengaluru, India",
-    "avatar": "/profile.png",
+    "avatar": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774285552/portfolio/fgkpmzl23jwylxg0a3da.webp",
     "logo": "Manish"
   },
   "social": [
@@ -22,6 +22,10 @@ export const data = {
     {
       "label": "Twitter",
       "url": "https://twitter.com/manish7479dlp"
+    },
+    {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/u/manish7479dlp/"
     },
     {
       "label": "Portfolio",
@@ -44,6 +48,10 @@ export const data = {
     {
       "name": "Experience",
       "id": "experience"
+    },
+    {
+      "name": "Problem Solving",
+      "id": "leetcode"
     },
     {
       "name": "Contact",
@@ -111,6 +119,11 @@ export const data = {
         "responseText": "I typically respond within 24 hours."
       }
     },
+    "leetcode": {
+      "tag": "Problem Solving",
+      "title": "LeetCode Stats",
+      "subtitle": "Consistently solving problems to sharpen algorithmic thinking"
+    },
     "footer": {
       "builtWith": "Built with ❤️ using React + Vite"
     }
@@ -151,7 +164,7 @@ export const data = {
           "JavaScript (ES6+)",
           "HTML5",
           "CSS3",
-          "tailwind"
+          "Tan Stack Query",
         ]
       },
       {
@@ -162,15 +175,15 @@ export const data = {
           "Microservices Architecture",
           "Hibernate",
           "JDBC",
+          "Redis",
+          "Apache Kafka",
           "Node.js",
           "Express.js",
           "Python",
           "FastAPI",
           "REST APIs",
           "PostgreSQL",
-          "MongoDB",
-          "Redis",
-          "Apache Kafka"
+          "MongoDB"
         ]
       },
       {
@@ -184,12 +197,15 @@ export const data = {
           "Shell Scripting",
           "VS Code",
           "DBeaver",
-          "Eclipse"
+          "Eclipse",
+          "IntelliJ IDEA",
+          "Antigravity"
         ]
       },
       {
         "name": "AI & GenAI",
         "technologies": [
+          "N8N",
           "Google ADK",
           "Gemini API",
           "LLMs",
@@ -204,7 +220,7 @@ export const data = {
     {
       "id": 1,
       "title": "Rescout",
-      "description": "A modern real estate discovery platform with advanced filtering, smart search, and bookmarking features. Designed for scalability with optimized APIs and responsive UI.",
+      "description": "Real estate discovery platform with advanced filtering, smart search, and bookmarking. Built for scalability with optimized APIs and a responsive UI.",
       "image": "",
       "technologies": [
         "React",
@@ -213,14 +229,14 @@ export const data = {
         "Tailwind CSS",
         "AWS"
       ],
-      "github": "https://github.com/manish7479dlp/rescout",
+      "github": "",
       "demo": "",
       "featured": true
     },
     {
       "id": 2,
       "title": "BI LLM Project",
-      "description": "An AI-powered business intelligence platform that converts raw data into actionable insights using LLMs. Supports natural language querying, integrates multiple data sources (databases, APIs), and enables creation of dynamic, customizable dashboards for real-time, data-driven decision-making..",
+      "description": "AI-powered BI platform that turns raw data into insights via natural language querying. Integrates multiple data sources and generates dynamic, real-time dashboards.",
       "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774206781/portfolio/wggeqe9lhpgthqdwohfc.png",
       "technologies": [
         "Python",
@@ -230,14 +246,14 @@ export const data = {
         "React",
         "PostgreSQL"
       ],
-      "github": "https://github.com/manish7479dlp/bi-llm",
+      "github": "",
       "demo": "",
       "featured": true
     },
     {
       "id": 4,
       "title": "Crude Oil Tracking System",
-      "description": "Enterprise-grade system developed during internship to monitor crude oil quantity and quality across transportation stages. Includes role-based dashboards, QA workflows, and analytics integration.",
+      "description": "Enterprise system to monitor crude oil quantity and quality across transportation stages. Features role-based dashboards, QA workflows, and analytics integration.",
       "image": "",
       "technologies": [
         "Spring Boot",
@@ -246,14 +262,14 @@ export const data = {
         "Tableau",
         "AWS"
       ],
-      "github": "https://github.com/manish7479dlp/crude-oil-tracker",
+      "github": "",
       "demo": "",
       "featured": true
     },
     {
       "id": 3,
       "title": "Staff Sales Portal",
-      "description": "An internal e-commerce platform enabling employees to place orders within restricted time windows. Includes OTP-based authentication, product management, and admin controls.",
+      "description": "Internal e-commerce portal for employees to place orders within restricted time windows. Includes OTP authentication, product management, and admin controls.",
       "image": "",
       "technologies": [
         "React",
@@ -261,14 +277,14 @@ export const data = {
         "MongoDB",
         "Tailwind CSS"
       ],
-      "github": "https://github.com/manish7479dlp/staff-sales",
-      "demo": "https://staffsales-demo.vercel.app",
+      "github": "",
+      "demo": "",
       "featured": true
     },
     {
       "id": 5,
       "title": "Bloggie",
-      "description": "A modern full-stack blogging platform that enables users to securely create, edit, and manage content with ease. Features authentication, complete CRUD functionality, and a clean, intuitive UI for a seamless writing and reading experience.",
+      "description": "Full-stack blogging platform with secure authentication, complete CRUD, and a clean reading/writing experience.",
       "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774206810/portfolio/v2ojnttpmhuyntayin73.png",
       "technologies": [
         "React",
@@ -283,7 +299,7 @@ export const data = {
     {
       "id": 6,
       "title": "Gallery App",
-      "description": "A full-stack photo sharing application that allows users to upload, organize, and manage their images with ease. It supports public and private visibility, giving users full control over who can view their content. Users can explore other profiles, view shared images, and interact with a clean, intuitive interface. Built with a focus on performance, scalability, and seamless user experience.",
+      "description": "Photo sharing app with upload, organisation, and public/private visibility controls. Users can explore profiles and view shared images.",
       "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774206853/portfolio/ih9njir9hg7f90hu2hel.png",
       "technologies": [
         "React",
@@ -310,6 +326,9 @@ export const data = {
       "description": "Building and maintaining scalable full-stack applications using Java, Spring Boot, React, and AWS. Responsible for backend architecture, frontend development, API design, and deployment pipelines."
     }
   ],
+  "leetcode": {
+    "username": "manish7479dlp"
+  },
   "contact": {
     "title": "Let's Build Something Great",
     "subtitle": "Open to exciting opportunities, collaborations, and challenging engineering problems.",

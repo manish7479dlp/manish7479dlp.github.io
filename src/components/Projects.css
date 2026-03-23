@@ -173,8 +173,23 @@
     font-family: var(--font-mono);
 }
 
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-filter {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 600px) {
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-body {
+        padding: 1.1rem;
     }
 }

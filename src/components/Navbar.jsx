@@ -1,9 +1,9 @@
 import './Navbar.css';
 import { useData } from '../DataContext';
-import { Github, Linkedin, Twitter, Globe, Menu, X } from 'lucide-react';
+import { Github, Linkedin, Twitter, Globe, Menu, X, Code2 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
-const socialIcons = { GitHub: Github, LinkedIn: Linkedin, Twitter: Twitter, Website: Globe };
+const socialIcons = { GitHub: Github, LinkedIn: Linkedin, Twitter: Twitter, LeetCode: Code2, Website: Globe };
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -13,7 +13,7 @@ export default function Navbar() {
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 40);
-            const sections = ['home', 'about', 'skills', 'projects', 'experience', 'contact'];
+            const sections = ['home', 'about', 'skills', 'projects', 'experience', 'leetcode', 'contact'];
             for (const id of sections.reverse()) {
                 const el = document.getElementById(id);
                 if (el && window.scrollY >= el.offsetTop - 100) {

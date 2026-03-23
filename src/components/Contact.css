@@ -145,3 +145,22 @@ a.contact-detail-value:hover {
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 480px) {
+    .contact-cta {
+        padding: 1.5rem 1rem;
+    }
+
+    .cta-heading {
+        font-size: 1.15rem;
+    }
+
+    .contact-socials-row {
+        gap: 0.4rem;
+    }
+
+    .contact-social-btn {
+        padding: 0.45rem 0.75rem;
+        font-size: 0.78rem;
+    }
+}

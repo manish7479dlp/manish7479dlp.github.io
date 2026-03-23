@@ -378,11 +378,36 @@
         width: 280px;
         height: 280px;
     }
+
+    .hero-blob-1 {
+        width: 320px;
+        height: 320px;
+        right: -60px;
+    }
+
+    .hero-blob-2 {
+        width: 260px;
+        height: 260px;
+        left: -40px;
+    }
 }
 
 @media (max-width: 480px) {
     .hero {
         padding: 8rem 0 4rem;
+    }
+
+    .hero-blob-1 {
+        width: 200px;
+        height: 200px;
+        right: -50px;
+        top: -50px;
+    }
+
+    .hero-blob-2 {
+        width: 180px;
+        height: 180px;
+        left: -30px;
     }
 
     .hero-stats {
@@ -396,5 +421,24 @@
 
     .hero-actions {
         justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero-avatar-frame {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-stat {
+        padding: 0.7rem 0.65rem;
+    }
+
+    .hero-stat-value {
+        font-size: 1.25rem;
+    }
+
+    .hero-stat-label {
+        font-size: 0.65rem;
     }
 }

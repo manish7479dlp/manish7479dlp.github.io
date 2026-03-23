@@ -1,8 +1,10 @@
 import './Footer.css';
 import { useData } from '../DataContext';
-import { Github, Linkedin, Twitter, Globe, Heart } from 'lucide-react';
+import { Github, Linkedin, Twitter, Globe, Heart, Code2 } from 'lucide-react';
 
-const socialIcons = { GitHub: Github, LinkedIn: Linkedin, Twitter: Twitter, Website: Globe };
+// const socialIcons = { GitHub: Github, LinkedIn: Linkedin, Twitter: Twitter, Website: Globe };
+const socialIcons = { GitHub: Github, LinkedIn: Linkedin, Twitter: Twitter, LeetCode: Code2, Website: Globe };
+
 
 export default function Footer() {
     const { personal, social, sections: { footer: footerConfig } } = useData();
