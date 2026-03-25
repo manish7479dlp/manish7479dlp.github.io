@@ -164,7 +164,7 @@ export const data = {
           "JavaScript (ES6+)",
           "HTML5",
           "CSS3",
-          "Tan Stack Query",
+          "Tan Stack Query"
         ]
       },
       {
@@ -217,6 +217,26 @@ export const data = {
     ]
   },
   "projects": [
+    {
+      "id": 7,
+      "title": "Hisab API — Finance Management System",
+      "description": "Robust backend system for personal and group expense tracking with secure authentication and social login. Designed RESTful APIs supporting JWT-based auth, OAuth2 integrations, group expense sharing, and scalable pagination. Built with a production-ready architecture focusing on clean code, security, and extensibility.",
+      "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774440734/portfolio/xayeurmtsse7nylmusyo.webp",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "JWT",
+        "OAuth2",
+        "PostgreSQL",
+        "Hibernate",
+        "Docker",
+        "Maven"
+      ],
+      "github": "https://github.com/manish7479dlp/hisab-api",
+      "demo": "",
+      "featured": true
+    },
     {
       "id": 1,
       "title": "Rescout",
