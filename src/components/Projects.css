@@ -162,6 +162,45 @@
     margin-top: 0.5rem;
 }
 
+.expand-btn {
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 0.4rem;
+    font-family: var(--font-sans);
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+}
+
+.expand-btn:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
+.tech-expand-btn {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 100px;
+    background: rgba(96, 165, 250, 0.12);
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.tech-expand-btn:hover {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
 .project-action-btn {
     padding: 0.55rem 1.1rem;
     font-size: 0.82rem;
