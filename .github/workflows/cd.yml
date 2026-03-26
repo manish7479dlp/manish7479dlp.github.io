@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - new-ui
+      - dev
 
 jobs:
   build:
