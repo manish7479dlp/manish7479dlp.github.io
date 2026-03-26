@@ -10,27 +10,60 @@ export const data = {
     "avatar": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774285552/portfolio/fgkpmzl23jwylxg0a3da.webp",
     "logo": "Manish"
   },
-
   "social": [
-    { "label": "GitHub", "url": "https://github.com/manish7479dlp" },
-    { "label": "LinkedIn", "url": "https://linkedin.com/in/manish7479dlp" },
-    { "label": "Twitter", "url": "https://twitter.com/manish7479dlp" },
-    { "label": "LeetCode", "url": "https://leetcode.com/u/manish7479dlp/" },
-    { "label": "Portfolio", "url": "https://manish.is-a.dev" }
+    {
+      "label": "GitHub",
+      "url": "https://github.com/manish7479dlp"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/manish7479dlp"
+    },
+    {
+      "label": "Twitter",
+      "url": "https://twitter.com/manish7479dlp"
+    },
+    {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/u/manish7479dlp/"
+    },
+    {
+      "label": "Portfolio",
+      "url": "https://manish.is-a.dev"
+    }
   ],
-
   "nav": [
-    { "name": "About", "id": "about" },
-    { "name": "Skills", "id": "skills" },
-    { "name": "Projects", "id": "projects" },
-    { "name": "Experience", "id": "experience" },
-    { "name": "Problem Solving", "id": "leetcode" },
-    { "name": "Contact", "id": "contact" }
+    {
+      "name": "About",
+      "id": "about"
+    },
+    {
+      "name": "Skills",
+      "id": "skills"
+    },
+    {
+      "name": "Projects",
+      "id": "projects"
+    },
+    {
+      "name": "Experience",
+      "id": "experience"
+    },
+    {
+      "name": "Problem Solving",
+      "id": "leetcode"
+    },
+    {
+      "name": "Contact",
+      "id": "contact"
+    }
   ],
-
   "sections": {
     "hero": {
-      "badge": { "text": "Open to new opportunities", "show": true },
+      "badge": {
+        "text": "Open to new opportunities",
+        "show": true
+      },
       "greeting": "Hi, I'm",
       "scrollHint": "Scroll to explore",
       "cta": {
@@ -95,60 +128,100 @@ export const data = {
       "builtWith": "Built with ❤️ using React + Vite"
     }
   },
-
   "about": {
     "title": "A bit about me",
     "content": "I'm a Java Full Stack Developer who genuinely enjoys the craft of software engineering — from designing clean REST APIs to building responsive UIs that users actually enjoy.\n\nOver the past ~2 years I've worked across startup and enterprise settings, shipping features in high-traffic systems, refactoring legacy monoliths into microservices, and collaborating closely with cross-functional teams to turn requirements into reliable, production-ready code.\n\nI also work on the GenAI side, building intelligent agent workflows using Google ADK — exploring how large language models can be orchestrated to solve real-world problems.\n\nOutside of work you'll find me working on side projects, diving into system design concepts, or tinkering with new tools in the ecosystem. I believe good software is built on clarity, empathy, and relentless iteration.",
     "statsCard": [
-      { "title": "Years of Experience", "value": "~2 Yrs" },
-      { "title": "Projects Shipped", "value": "15+" },
-      { "title": "Technologies Used", "value": "20+" }
+      {
+        "title": "Years of Experience",
+        "value": "~2 Yrs"
+      },
+      {
+        "title": "Projects Shipped",
+        "value": "15+"
+      },
+      {
+        "title": "Technologies Used",
+        "value": "20+"
+      }
     ],
     "codeSnippet": "const manish = {\n  role: \"Full Stack Dev\",\n  stack: [\"Java\", \"React\", \"AWS\"],\n  genai: [\"Google ADK\", \"Gemini\"],\n  loves: \"clean code\",\n  available: true,\n};"
   },
-
   "skills": {
     "title": "Skills & Technologies",
     "categories": [
       {
         "name": "Frontend",
         "technologies": [
-          "React","SvelteKit","TypeScript","Redux","Tailwind CSS",
-          "Material UI","Shadcn UI","Bootstrap","JavaScript (ES6+)",
-          "HTML5","CSS3","Tan Stack Query"
+          "React",
+          "SvelteKit",
+          "TypeScript",
+          "Redux",
+          "Tailwind CSS",
+          "Material UI",
+          "Shadcn UI",
+          "Bootstrap",
+          "JavaScript (ES6+)",
+          "HTML5",
+          "CSS3",
+          "Tan Stack Query"
         ]
       },
       {
         "name": "Backend",
         "technologies": [
-          "Java","Spring Boot","Microservices Architecture","Hibernate",
-          "JDBC","Redis","Apache Kafka","Node.js","Express.js",
-          "Python","FastAPI","REST APIs","PostgreSQL","MongoDB"
+          "Java",
+          "Spring Boot",
+          "Microservices Architecture",
+          "Hibernate",
+          "JDBC",
+          "Redis",
+          "Apache Kafka",
+          "Node.js",
+          "Express.js",
+          "Python",
+          "FastAPI",
+          "REST APIs",
+          "PostgreSQL",
+          "MongoDB"
         ]
       },
       {
         "name": "Tools & Platforms",
         "technologies": [
-          "Git","GitHub","Docker","AWS","CI/CD","Shell Scripting",
-          "VS Code","DBeaver","Eclipse","IntelliJ IDEA","Antigravity"
+          "Git",
+          "GitHub",
+          "Docker",
+          "AWS",
+          "CI/CD",
+          "Shell Scripting",
+          "VS Code",
+          "DBeaver",
+          "Eclipse",
+          "IntelliJ IDEA",
+          "Antigravity"
         ]
       },
       {
         "name": "AI & GenAI",
         "technologies": [
-          "N8N","Google ADK","Gemini API","LLMs","RAG",
-          "Prompt Engineering","FastAPI (AI APIs)"
+          "N8N",
+          "Google ADK",
+          "Gemini API",
+          "LLMs",
+          "RAG",
+          "Prompt Engineering",
+          "FastAPI (AI APIs)"
         ]
       }
     ]
   },
-
   "projects": [
-    {
+{
       "id": 8,
       "title": "Math Formula Agent — LaTeX to Executable Python (GenAI)",
       "description": "AI-powered multi-agent system built with Google ADK that converts LaTeX mathematical formulas into executable Python code and computes real results. Uses hierarchical agents for formula interpretation and sandboxed execution. Demonstrates real-world LLM orchestration and GenAI workflows.",
-      "image": "",
+      "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774538750/portfolio/msa7qjft7syklhgee0we.webp",
       "technologies": [
         "Python","Google ADK","Gemini","LLMs",
         "Multi-Agent Systems","SymPy","NumPy","Docker"
@@ -160,39 +233,52 @@ export const data = {
     {
       "id": 7,
       "title": "Hisab API — Finance Management System",
-      "description": "Robust backend system for personal and group expense tracking with secure authentication and social login.",
+      "description": "Robust backend system for personal and group expense tracking with secure authentication and social login. Designed RESTful APIs supporting JWT-based auth, OAuth2 integrations, group expense sharing, and scalable pagination. Built with a production-ready architecture focusing on clean code, security, and extensibility.",
       "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774440734/portfolio/xayeurmtsse7nylmusyo.webp",
-      "technologies": ["Java","Spring Boot","JWT","OAuth2","PostgreSQL","Docker"],
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "JWT",
+        "OAuth2",
+        "PostgreSQL",
+        "Hibernate",
+        "Docker",
+        "Maven"
+      ],
       "github": "https://github.com/manish7479dlp/hisab-api",
       "demo": "",
       "featured": true
     },
     {
       "id": 1,
-      "title": "Rescout",
-      "description": "Real estate discovery platform with advanced filtering and scalable APIs.",
+      "title": "Real Estate Asset Management (REAM)",
+      "description": "Real estate discovery platform with advanced filtering, smart search, and bookmarking. Built for scalability with optimized APIs and a responsive UI.",
       "image": "",
-      "technologies": ["React","Spring Boot","PostgreSQL","AWS"],
-      "github": "",
-      "demo": "",
-      "featured": true
-    },
-    {
-      "id": 2,
-      "title": "BI LLM Project",
-      "description": "AI-powered BI platform for natural language data querying.",
-      "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774206781/portfolio/wggeqe9lhpgthqdwohfc.png",
-      "technologies": ["Python","LangChain","FastAPI","React"],
+      "technologies": [
+        "React",
+"shadcn",
+        "Spring Boot",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "AWS"
+      ],
       "github": "",
       "demo": "",
       "featured": true
     },
     {
       "id": 4,
-      "title": "Crude Oil Tracking System",
-      "description": "Enterprise system to monitor oil quantity & quality across stages.",
+      "title": "Tracking System",
+      "description": "Enterprise system to monitor crude oil quantity and quality across transportation stages. Features role-based dashboards, QA workflows, and analytics integration.",
       "image": "",
-      "technologies": ["Spring Boot","PostgreSQL","React","AWS"],
+      "technologies": [
+        "Spring Boot",
+        "PostgreSQL",
+        "React",
+        "Tableau",
+        "AWS"
+      ],
       "github": "",
       "demo": "",
       "featured": true
@@ -200,9 +286,14 @@ export const data = {
     {
       "id": 3,
       "title": "Staff Sales Portal",
-      "description": "Internal ecommerce platform with OTP-based authentication.",
+      "description": "Internal e-commerce portal for employees to place orders within restricted time windows. Includes OTP authentication, product management, and admin controls.",
       "image": "",
-      "technologies": ["React","Node.js","MongoDB"],
+      "technologies": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Tailwind CSS"
+      ],
       "github": "",
       "demo": "",
       "featured": true
@@ -210,9 +301,14 @@ export const data = {
     {
       "id": 5,
       "title": "Bloggie",
-      "description": "Full-stack blogging platform with authentication and CRUD.",
+      "description": "Full-stack blogging platform with secure authentication, complete CRUD, and a clean reading/writing experience.",
       "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774206810/portfolio/v2ojnttpmhuyntayin73.png",
-      "technologies": ["React","Express","MongoDB"],
+      "technologies": [
+        "React",
+        "Express.js",
+        "MongoDB",
+        "JWT"
+      ],
       "github": "https://github.com/manish7479dlp/blog-api",
       "demo": "https://manish7479dlp-bloggie.netlify.app/",
       "featured": false
@@ -220,33 +316,39 @@ export const data = {
     {
       "id": 6,
       "title": "Gallery App",
-      "description": "Photo sharing app with public/private visibility.",
+      "description": "Photo sharing app with upload, organisation, and public/private visibility controls. Users can explore profiles and view shared images.",
       "image": "https://res.cloudinary.com/ddyo9iiz9/image/upload/v1774206853/portfolio/ih9njir9hg7f90hu2hel.png",
-      "technologies": ["React","Express","MongoDB","Cloudinary"],
+      "technologies": [
+        "React",
+        "Express.js",
+        "MongoDB",
+        "Cloudinary"
+      ],
       "github": "https://github.com/manish7479dlp/photo-gallery",
       "demo": "https://manish7479dlp-gallery-app.netlify.app/",
       "featured": false
     }
   ],
-
   "experience": [
     {
       "company": "Internship Project",
       "position": "Full Stack Developer Intern",
-      "duration": "Mar 2024 - Aug 2024"
+      "duration": "Mar 2024 - Aug 2024",
+      "description": "Developed a crude oil tracking system to monitor quantity and quality changes during transportation. Implemented role-based dashboards, stage-wise workflows, and data validation mechanisms."
     },
     {
       "company": "Aeka Advisors",
       "position": "Java Full Stack Developer",
-      "duration": "Aug 2024 - Present"
+      "duration": "Aug 2024 - Present",
+      "description": "Building and maintaining scalable full-stack applications using Java, Spring Boot, React, and AWS. Responsible for backend architecture, frontend development, API design, and deployment pipelines."
     }
   ],
-
-  "leetcode": { "username": "manish7479dlp" },
-
+  "leetcode": {
+    "username": "manish7479dlp"
+  },
   "contact": {
     "title": "Let's Build Something Great",
-    "subtitle": "Open to exciting opportunities and collaborations.",
+    "subtitle": "Open to exciting opportunities, collaborations, and challenging engineering problems.",
     "cta": "Get In Touch"
   }
 };
