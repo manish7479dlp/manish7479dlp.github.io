@@ -367,9 +367,9 @@
     }
 
     .hero-description {
-        text-align: center;
+        text-align: left;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 0;
         width: 100%;
     }
 
