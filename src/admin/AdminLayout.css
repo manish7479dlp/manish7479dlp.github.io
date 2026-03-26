@@ -281,6 +281,17 @@
         padding: 0 1rem;
     }
 
+    .admin-topbar .btn {
+        padding: 0.35rem 0.65rem;
+        font-size: 0.78rem;
+        gap: 0.35rem;
+    }
+
+    .admin-topbar .btn svg {
+        width: 14px;
+        height: 14px;
+    }
+
     .admin-card-body {
         padding: 1rem 0.75rem;
     }
