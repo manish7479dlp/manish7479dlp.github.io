@@ -217,6 +217,26 @@ export const data = {
     ]
   },
   "projects": [
+    "projects": [
+  {
+    "id": 8,
+    "title": "Math Formula Agent — LaTeX to Executable Python (GenAI)",
+    "description": "AI-powered multi-agent system built with Google ADK that converts LaTeX mathematical formulas into executable Python code and computes real results. Designed with a hierarchical agent architecture where a formula interpreter dynamically extracts variables, generates clean Python code, and a sandboxed executor runs it safely. Demonstrates practical GenAI orchestration, tool usage, and real-time code execution workflows.",
+    "image": "",
+    "technologies": [
+      "Python",
+      "Google ADK",
+      "Gemini 2.5 Flash",
+      "LLMs",
+      "Multi-Agent Systems",
+      "SymPy",
+      "NumPy",
+      "Docker"
+    ],
+    "github": "",
+    "demo": "",
+    "featured": true
+  },
     {
       "id": 7,
       "title": "Hisab API — Finance Management System",
